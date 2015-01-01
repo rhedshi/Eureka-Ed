@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dax-r9-Eht">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AKJ-9a-KZ1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WcL-v1-Rxx">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="aYL-8C-f4c" customClass="VideoCell" customModule="Eureka_Ed" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2fB-pP-38q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="2fB-pP-38q" secondAttribute="trailing" constant="-8" id="BQP-py-Dmi"/>
+                                            <constraint firstItem="2fB-pP-38q" firstAttribute="top" secondItem="aYL-8C-f4c" secondAttribute="topMargin" constant="-8" id="Has-yt-G2w"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="2fB-pP-38q" secondAttribute="bottom" constant="-8" id="cPa-sJ-b5t"/>
+                                            <constraint firstItem="2fB-pP-38q" firstAttribute="leading" secondItem="aYL-8C-f4c" secondAttribute="leadingMargin" constant="-8" id="xlF-Bf-Lha"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="2fB-pP-38q" id="8iQ-sr-a68"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="D1E-Ei-K9q"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="See-BY-C56"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="AKJ-9a-KZ1" secondAttribute="trailing" constant="-16" id="P05-qI-GK8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AKJ-9a-KZ1" secondAttribute="bottom" id="oEE-9l-1Go"/>
+                            <constraint firstItem="AKJ-9a-KZ1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="tjd-Ux-NdM"/>
+                            <constraint firstItem="AKJ-9a-KZ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="xbV-es-xif"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IiU-Ow-sTM"/>
+                    <connections>
+                        <outlet property="collectionView" destination="AKJ-9a-KZ1" id="V9A-Da-Vqv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="412"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ffK-bU-eZD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dax-r9-Eht" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QMD-gP-N4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3oC-y6-o3W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzb-pn-oOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="-333"/>
+        </scene>
+    </scenes>
+</document>

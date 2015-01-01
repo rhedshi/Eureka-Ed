@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5AB3766B-10D5-4DB6-B84B-CF296340656B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Eureka Ed</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F1E37C7E6265BF145C7047A5B2347E6F88A45542</key>
+		<string>https://github.com/rhedshi/Eureka-Ed.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Eureka Ed/Eureka Ed.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F1E37C7E6265BF145C7047A5B2347E6F88A45542</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rhedshi/Eureka-Ed.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F1E37C7E6265BF145C7047A5B2347E6F88A45542</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F1E37C7E6265BF145C7047A5B2347E6F88A45542</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Eureka-Ed</string>
+		</dict>
+	</array>
+</dict>
+</plist>

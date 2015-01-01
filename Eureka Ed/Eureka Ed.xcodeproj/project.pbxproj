@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D1CC50D1A47827E00907A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC50C1A47827E00907A6F /* AppDelegate.swift */; };
+		4D1CC5101A47827E00907A6F /* Eureka_Ed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC50E1A47827E00907A6F /* Eureka_Ed.xcdatamodeld */; };
+		4D1CC5121A47827E00907A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC5111A47827E00907A6F /* ViewController.swift */; };
+		4D1CC5151A47827E00907A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CC5131A47827E00907A6F /* Main.storyboard */; };
+		4D1CC5171A47827E00907A6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CC5161A47827E00907A6F /* Images.xcassets */; };
+		4D1CC51A1A47827E00907A6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CC5181A47827E00907A6F /* LaunchScreen.xib */; };
+		4D1CC5261A47827E00907A6F /* Eureka_EdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC5251A47827E00907A6F /* Eureka_EdTests.swift */; };
+		4D1CC5301A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CC52F1A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 */; };
+		4D4C93EC1A54EE3300F2FFB4 /* Baymax and Hiro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E71A54EE3300F2FFB4 /* Baymax and Hiro.jpg */; };
+		4D4C93ED1A54EE3300F2FFB4 /* Fred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E81A54EE3300F2FFB4 /* Fred.jpg */; };
+		4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */; };
+		4D4C93EF1A54EE3300F2FFB4 /* Honey Lemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */; };
+		4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */; };
+		4DF18E091A48F4700006E8B7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E081A48F4700006E8B7 /* Video.swift */; };
+		4DF18E0B1A48F8DC0006E8B7 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E0A1A48F8DC0006E8B7 /* Episode.swift */; };
+		4DF18E0D1A48F8EA0006E8B7 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E0C1A48F8EA0006E8B7 /* Series.swift */; };
+		4DF18E111A4909A20006E8B7 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E101A4909A20006E8B7 /* VideoCell.swift */; };
+		4DF18E1A1A495DEC0006E8B7 /* Baymax and Hiro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */; };
+		4DF18E1B1A495DEC0006E8B7 /* Fred.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E161A495DEC0006E8B7 /* Fred.mp4 */; };
+		4DF18E1C1A495DEC0006E8B7 /* Go Go.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E171A495DEC0006E8B7 /* Go Go.mp4 */; };
+		4DF18E1D1A495DEC0006E8B7 /* Honey Lemon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E181A495DEC0006E8B7 /* Honey Lemon.mp4 */; };
+		4DF18E1E1A495DEC0006E8B7 /* Wasabi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E191A495DEC0006E8B7 /* Wasabi.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D1CC5201A47827E00907A6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D1CC4FF1A47827E00907A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1CC5061A47827E00907A6F;
+			remoteInfo = "Eureka Ed";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D1CC5071A47827E00907A6F /* Eureka Ed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eureka Ed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1CC50B1A47827E00907A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1CC50C1A47827E00907A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D1CC50F1A47827E00907A6F /* Eureka_Ed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eureka_Ed.xcdatamodel; sourceTree = "<group>"; };
+		4D1CC5111A47827E00907A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D1CC5141A47827E00907A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D1CC5161A47827E00907A6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4D1CC5191A47827E00907A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4D1CC51F1A47827E00907A6F /* Eureka EdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eureka EdTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1CC5241A47827E00907A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1CC5251A47827E00907A6F /* Eureka_EdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eureka_EdTests.swift; sourceTree = "<group>"; };
+		4D1CC52F1A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Star Wars - The Old Republic - Short Movie.mp4"; sourceTree = "<group>"; };
+		4D4C93E71A54EE3300F2FFB4 /* Baymax and Hiro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Baymax and Hiro.jpg"; sourceTree = "<group>"; };
+		4D4C93E81A54EE3300F2FFB4 /* Fred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fred.jpg; sourceTree = "<group>"; };
+		4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Go Go.jpg"; sourceTree = "<group>"; };
+		4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honey Lemon.jpg"; sourceTree = "<group>"; };
+		4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wasabi.jpg; sourceTree = "<group>"; };
+		4DF18E081A48F4700006E8B7 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		4DF18E0A1A48F8DC0006E8B7 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		4DF18E0C1A48F8EA0006E8B7 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		4DF18E101A4909A20006E8B7 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baymax and Hiro.mp4"; sourceTree = "<group>"; };
+		4DF18E161A495DEC0006E8B7 /* Fred.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fred.mp4; sourceTree = "<group>"; };
+		4DF18E171A495DEC0006E8B7 /* Go Go.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Go Go.mp4"; sourceTree = "<group>"; };
+		4DF18E181A495DEC0006E8B7 /* Honey Lemon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Honey Lemon.mp4"; sourceTree = "<group>"; };
+		4DF18E191A495DEC0006E8B7 /* Wasabi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wasabi.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D1CC5041A47827E00907A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CC51C1A47827E00907A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D1CC4FE1A47827E00907A6F = {
+			isa = PBXGroup;
+			children = (
+				4D1CC5091A47827E00907A6F /* Eureka Ed */,
+				4D1CC5221A47827E00907A6F /* Eureka EdTests */,
+				4D1CC5081A47827E00907A6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D1CC5081A47827E00907A6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CC5071A47827E00907A6F /* Eureka Ed.app */,
+				4D1CC51F1A47827E00907A6F /* Eureka EdTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D1CC5091A47827E00907A6F /* Eureka Ed */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CC50C1A47827E00907A6F /* AppDelegate.swift */,
+				4DF18E0C1A48F8EA0006E8B7 /* Series.swift */,
+				4DF18E0A1A48F8DC0006E8B7 /* Episode.swift */,
+				4DF18E081A48F4700006E8B7 /* Video.swift */,
+				4D1CC5111A47827E00907A6F /* ViewController.swift */,
+				4DF18E101A4909A20006E8B7 /* VideoCell.swift */,
+				4D1CC5131A47827E00907A6F /* Main.storyboard */,
+				4D1CC5161A47827E00907A6F /* Images.xcassets */,
+				4DF18E121A4959680006E8B7 /* Videos */,
+				4D4C93E51A54E04000F2FFB4 /* Thumbnails */,
+				4D1CC52F1A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 */,
+				4D1CC5181A47827E00907A6F /* LaunchScreen.xib */,
+				4D1CC50E1A47827E00907A6F /* Eureka_Ed.xcdatamodeld */,
+				4D1CC50A1A47827E00907A6F /* Supporting Files */,
+			);
+			path = "Eureka Ed";
+			sourceTree = "<group>";
+		};
+		4D1CC50A1A47827E00907A6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CC50B1A47827E00907A6F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D1CC5221A47827E00907A6F /* Eureka EdTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CC5251A47827E00907A6F /* Eureka_EdTests.swift */,
+				4D1CC5231A47827E00907A6F /* Supporting Files */,
+			);
+			path = "Eureka EdTests";
+			sourceTree = "<group>";
+		};
+		4D1CC5231A47827E00907A6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CC5241A47827E00907A6F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D4C93E51A54E04000F2FFB4 /* Thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C93E61A54E04E00F2FFB4 /* Big Hero 6 */,
+			);
+			path = Thumbnails;
+			sourceTree = "<group>";
+		};
+		4D4C93E61A54E04E00F2FFB4 /* Big Hero 6 */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C93E71A54EE3300F2FFB4 /* Baymax and Hiro.jpg */,
+				4D4C93E81A54EE3300F2FFB4 /* Fred.jpg */,
+				4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */,
+				4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */,
+				4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */,
+			);
+			path = "Big Hero 6";
+			sourceTree = "<group>";
+		};
+		4DF18E121A4959680006E8B7 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				4DF18E131A49597D0006E8B7 /* Big Hero 6 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		4DF18E131A49597D0006E8B7 /* Big Hero 6 */ = {
+			isa = PBXGroup;
+			children = (
+				4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */,
+				4DF18E161A495DEC0006E8B7 /* Fred.mp4 */,
+				4DF18E171A495DEC0006E8B7 /* Go Go.mp4 */,
+				4DF18E181A495DEC0006E8B7 /* Honey Lemon.mp4 */,
+				4DF18E191A495DEC0006E8B7 /* Wasabi.mp4 */,
+			);
+			path = "Big Hero 6";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D1CC5061A47827E00907A6F /* Eureka Ed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1CC5291A47827E00907A6F /* Build configuration list for PBXNativeTarget "Eureka Ed" */;
+			buildPhases = (
+				4D1CC5031A47827E00907A6F /* Sources */,
+				4D1CC5041A47827E00907A6F /* Frameworks */,
+				4D1CC5051A47827E00907A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eureka Ed";
+			productName = "Eureka Ed";
+			productReference = 4D1CC5071A47827E00907A6F /* Eureka Ed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D1CC51E1A47827E00907A6F /* Eureka EdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1CC52C1A47827E00907A6F /* Build configuration list for PBXNativeTarget "Eureka EdTests" */;
+			buildPhases = (
+				4D1CC51B1A47827E00907A6F /* Sources */,
+				4D1CC51C1A47827E00907A6F /* Frameworks */,
+				4D1CC51D1A47827E00907A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D1CC5211A47827E00907A6F /* PBXTargetDependency */,
+			);
+			name = "Eureka EdTests";
+			productName = "Eureka EdTests";
+			productReference = 4D1CC51F1A47827E00907A6F /* Eureka EdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D1CC4FF1A47827E00907A6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rhed Shi";
+				TargetAttributes = {
+					4D1CC5061A47827E00907A6F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4D1CC51E1A47827E00907A6F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 4D1CC5061A47827E00907A6F;
+					};
+				};
+			};
+			buildConfigurationList = 4D1CC5021A47827E00907A6F /* Build configuration list for PBXProject "Eureka Ed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D1CC4FE1A47827E00907A6F;
+			productRefGroup = 4D1CC5081A47827E00907A6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D1CC5061A47827E00907A6F /* Eureka Ed */,
+				4D1CC51E1A47827E00907A6F /* Eureka EdTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D1CC5051A47827E00907A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1CC5301A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 in Resources */,
+				4D1CC5151A47827E00907A6F /* Main.storyboard in Resources */,
+				4DF18E1B1A495DEC0006E8B7 /* Fred.mp4 in Resources */,
+				4D1CC51A1A47827E00907A6F /* LaunchScreen.xib in Resources */,
+				4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */,
+				4DF18E1D1A495DEC0006E8B7 /* Honey Lemon.mp4 in Resources */,
+				4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */,
+				4D4C93ED1A54EE3300F2FFB4 /* Fred.jpg in Resources */,
+				4DF18E1E1A495DEC0006E8B7 /* Wasabi.mp4 in Resources */,
+				4D4C93EF1A54EE3300F2FFB4 /* Honey Lemon.jpg in Resources */,
+				4DF18E1C1A495DEC0006E8B7 /* Go Go.mp4 in Resources */,
+				4DF18E1A1A495DEC0006E8B7 /* Baymax and Hiro.mp4 in Resources */,
+				4D1CC5171A47827E00907A6F /* Images.xcassets in Resources */,
+				4D4C93EC1A54EE3300F2FFB4 /* Baymax and Hiro.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CC51D1A47827E00907A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D1CC5031A47827E00907A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF18E0D1A48F8EA0006E8B7 /* Series.swift in Sources */,
+				4DF18E111A4909A20006E8B7 /* VideoCell.swift in Sources */,
+				4D1CC5121A47827E00907A6F /* ViewController.swift in Sources */,
+				4DF18E091A48F4700006E8B7 /* Video.swift in Sources */,
+				4D1CC50D1A47827E00907A6F /* AppDelegate.swift in Sources */,
+				4DF18E0B1A48F8DC0006E8B7 /* Episode.swift in Sources */,
+				4D1CC5101A47827E00907A6F /* Eureka_Ed.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CC51B1A47827E00907A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1CC5261A47827E00907A6F /* Eureka_EdTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D1CC5211A47827E00907A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1CC5061A47827E00907A6F /* Eureka Ed */;
+			targetProxy = 4D1CC5201A47827E00907A6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D1CC5131A47827E00907A6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D1CC5141A47827E00907A6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D1CC5181A47827E00907A6F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D1CC5191A47827E00907A6F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D1CC5271A47827E00907A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4D1CC5281A47827E00907A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D1CC52A1A47827E00907A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Eureka Ed/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D1CC52B1A47827E00907A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Eureka Ed/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4D1CC52D1A47827E00907A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Eureka EdTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eureka Ed.app/Eureka Ed";
+			};
+			name = Debug;
+		};
+		4D1CC52E1A47827E00907A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Eureka EdTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eureka Ed.app/Eureka Ed";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D1CC5021A47827E00907A6F /* Build configuration list for PBXProject "Eureka Ed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1CC5271A47827E00907A6F /* Debug */,
+				4D1CC5281A47827E00907A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1CC5291A47827E00907A6F /* Build configuration list for PBXNativeTarget "Eureka Ed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1CC52A1A47827E00907A6F /* Debug */,
+				4D1CC52B1A47827E00907A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1CC52C1A47827E00907A6F /* Build configuration list for PBXNativeTarget "Eureka EdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1CC52D1A47827E00907A6F /* Debug */,
+				4D1CC52E1A47827E00907A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D1CC50E1A47827E00907A6F /* Eureka_Ed.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D1CC50F1A47827E00907A6F /* Eureka_Ed.xcdatamodel */,
+			);
+			currentVersion = 4D1CC50F1A47827E00907A6F /* Eureka_Ed.xcdatamodel */;
+			path = Eureka_Ed.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4D1CC4FF1A47827E00907A6F /* Project object */;
+}
