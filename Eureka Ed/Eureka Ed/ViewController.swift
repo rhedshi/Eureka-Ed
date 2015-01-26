@@ -14,9 +14,18 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var collectionView: UICollectionView!
     
     let series = Series.BigHero6()
+    var embeddingViewController: UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.orangeColor()
+        self.collectionView.setTranslatesAutoresizingMaskIntoConstraints(false)
+    }
+    
+    @IBAction func addPressed(sender: AnyObject) {
+        var frame:CGRect = self.view.frame
+        self.view.frame = CGRectMake(frame.origin.x + 150, frame.origin.y, frame.width, frame.height)
     }
     
     // MARK: - UICollectionViewDatasource
@@ -43,7 +52,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as VideoCell
         let url = cell.video!.url
         var player: MPMoviePlayerViewController = MPMoviePlayerViewController(contentURL: url)
-        self.presentMoviePlayerViewControllerAnimated(player)
+        self.embeddingViewController?.presentMoviePlayerViewControllerAnimated(player)
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout

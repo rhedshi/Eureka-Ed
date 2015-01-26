@@ -20,9 +20,12 @@
 		4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */; };
 		4D4C93EF1A54EE3300F2FFB4 /* Honey Lemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */; };
 		4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */; };
+		4DCEF4EA1A74209500AFAA71 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF4E81A74209500AFAA71 /* Episode.swift */; };
+		4DCEF4EB1A74209500AFAA71 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF4E91A74209500AFAA71 /* Series.swift */; };
+		4DE8E8631A743A2500F28F18 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8621A743A2500F28F18 /* MasterViewController.swift */; };
+		4DE8E8671A74420F00F28F18 /* EKDContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */; };
+		4DE8E86B1A7456D900F28F18 /* EKDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E86A1A7456D900F28F18 /* EKDButton.swift */; };
 		4DF18E091A48F4700006E8B7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E081A48F4700006E8B7 /* Video.swift */; };
-		4DF18E0B1A48F8DC0006E8B7 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E0A1A48F8DC0006E8B7 /* Episode.swift */; };
-		4DF18E0D1A48F8EA0006E8B7 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E0C1A48F8EA0006E8B7 /* Series.swift */; };
 		4DF18E111A4909A20006E8B7 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E101A4909A20006E8B7 /* VideoCell.swift */; };
 		4DF18E1A1A495DEC0006E8B7 /* Baymax and Hiro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */; };
 		4DF18E1B1A495DEC0006E8B7 /* Fred.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E161A495DEC0006E8B7 /* Fred.mp4 */; };
@@ -59,9 +62,12 @@
 		4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Go Go.jpg"; sourceTree = "<group>"; };
 		4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honey Lemon.jpg"; sourceTree = "<group>"; };
 		4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wasabi.jpg; sourceTree = "<group>"; };
+		4DCEF4E81A74209500AFAA71 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		4DCEF4E91A74209500AFAA71 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		4DE8E8621A743A2500F28F18 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EKDContainerView.swift; path = ../EKDContainerView.swift; sourceTree = "<group>"; };
+		4DE8E86A1A7456D900F28F18 /* EKDButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EKDButton.swift; path = ../EKDButton.swift; sourceTree = "<group>"; };
 		4DF18E081A48F4700006E8B7 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		4DF18E0A1A48F8DC0006E8B7 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		4DF18E0C1A48F8EA0006E8B7 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
 		4DF18E101A4909A20006E8B7 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baymax and Hiro.mp4"; sourceTree = "<group>"; };
 		4DF18E161A495DEC0006E8B7 /* Fred.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fred.mp4; sourceTree = "<group>"; };
@@ -110,13 +116,15 @@
 			isa = PBXGroup;
 			children = (
 				4D1CC50C1A47827E00907A6F /* AppDelegate.swift */,
-				4DF18E0C1A48F8EA0006E8B7 /* Series.swift */,
-				4DF18E0A1A48F8DC0006E8B7 /* Episode.swift */,
-				4DF18E081A48F4700006E8B7 /* Video.swift */,
 				4D1CC5111A47827E00907A6F /* ViewController.swift */,
+				4DCEF4E91A74209500AFAA71 /* Series.swift */,
+				4DCEF4E81A74209500AFAA71 /* Episode.swift */,
+				4DF18E081A48F4700006E8B7 /* Video.swift */,
 				4DF18E101A4909A20006E8B7 /* VideoCell.swift */,
+				4DE8E8621A743A2500F28F18 /* MasterViewController.swift */,
 				4D1CC5131A47827E00907A6F /* Main.storyboard */,
 				4D1CC5161A47827E00907A6F /* Images.xcassets */,
+				4DE8E86D1A7589D200F28F18 /* Utilities */,
 				4DF18E121A4959680006E8B7 /* Videos */,
 				4D4C93E51A54E04000F2FFB4 /* Thumbnails */,
 				4D1CC52F1A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 */,
@@ -170,6 +178,15 @@
 				4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */,
 			);
 			path = "Big Hero 6";
+			sourceTree = "<group>";
+		};
+		4DE8E86D1A7589D200F28F18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4DE8E86A1A7456D900F28F18 /* EKDButton.swift */,
+				4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		4DF18E121A4959680006E8B7 /* Videos */ = {
@@ -303,13 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF18E0D1A48F8EA0006E8B7 /* Series.swift in Sources */,
+				4DE8E8671A74420F00F28F18 /* EKDContainerView.swift in Sources */,
+				4DE8E8631A743A2500F28F18 /* MasterViewController.swift in Sources */,
 				4DF18E111A4909A20006E8B7 /* VideoCell.swift in Sources */,
+				4DCEF4EA1A74209500AFAA71 /* Episode.swift in Sources */,
 				4D1CC5121A47827E00907A6F /* ViewController.swift in Sources */,
+				4DE8E86B1A7456D900F28F18 /* EKDButton.swift in Sources */,
 				4DF18E091A48F4700006E8B7 /* Video.swift in Sources */,
 				4D1CC50D1A47827E00907A6F /* AppDelegate.swift in Sources */,
-				4DF18E0B1A48F8DC0006E8B7 /* Episode.swift in Sources */,
 				4D1CC5101A47827E00907A6F /* Eureka_Ed.xcdatamodeld in Sources */,
+				4DCEF4EB1A74209500AFAA71 /* Series.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
