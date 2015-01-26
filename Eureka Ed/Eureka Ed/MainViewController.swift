@@ -1,5 +1,5 @@
 //
-//  MasterViewController.swift
+//  MainViewController.swift
 //  Eureka Ed
 //
 //  Created by Rhed Shi on 1/24/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UIViewController {
+class MainViewController: UIViewController {
     
     @IBOutlet weak var container: EKDContainerView!
     
@@ -24,7 +24,11 @@ class MasterViewController: UIViewController {
         self.selectButton(selectedIndex)
     }
 
-    @IBAction func buttonPressed(sender: AnyObject) {
+    @IBAction func openButtonPressed(sender: AnyObject) {
+        self.sideMenuViewController.openMenuAnimated(true, completion: nil)
+    }
+    
+    @IBAction func sideButtonPressed(sender: AnyObject) {
         selectedButton?.selected = false
         selectedButton = (sender as EKDButton)
         self.selectButton(sender.tag)
@@ -63,5 +67,9 @@ class MasterViewController: UIViewController {
             viewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("CameraViewController") as? UIViewController
         }
         container.addViewController(viewController!)
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.Default
     }
 }

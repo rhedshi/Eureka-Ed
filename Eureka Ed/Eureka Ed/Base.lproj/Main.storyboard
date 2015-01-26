@@ -241,10 +241,10 @@
             </objects>
             <point key="canvasLocation" x="2655" y="1061"/>
         </scene>
-        <!--Master View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="Zj8-nE-bro">
             <objects>
-                <viewController id="GK6-My-Zhq" customClass="MasterViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GK6-My-Zhq" customClass="MainViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eCx-AJ-CUN"/>
                         <viewControllerLayoutGuide type="bottom" id="Nva-Z3-nPO"/>
@@ -267,7 +267,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="wWP-SJ-zR1"/>
+                                            <action selector="sideButtonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="CDE-nS-jJr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQc-8C-b6h" customClass="EKDButton" customModule="Eureka_Ed" customModuleProvider="target">
@@ -281,7 +281,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="qyT-mm-C3G"/>
+                                            <action selector="sideButtonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="tYk-jG-uC1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz8-Z8-69L" customClass="EKDButton" customModule="Eureka_Ed" customModuleProvider="target">
@@ -295,7 +295,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="een-vY-KD4"/>
+                                            <action selector="sideButtonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="PoJ-4I-KWW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="or7-bp-RWT" customClass="EKDButton" customModule="Eureka_Ed" customModuleProvider="target">
@@ -309,7 +309,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="BDe-BK-QRW"/>
+                                            <action selector="sideButtonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="Irr-mC-tbt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -346,7 +346,13 @@
                             <constraint firstItem="ca8-Yl-rGG" firstAttribute="top" secondItem="k5E-gs-eNi" secondAttribute="topMargin" id="zAA-ws-Zn4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dO8-6N-Z5a"/>
+                    <navigationItem key="navigationItem" id="dO8-6N-Z5a">
+                        <barButtonItem key="leftBarButtonItem" image="noun_97985" style="plain" id="eCP-eJ-xE9">
+                            <connections>
+                                <action selector="openButtonPressed:" destination="GK6-My-Zhq" id="Knk-G0-O2K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
@@ -384,5 +390,6 @@
         <image name="noun_36120" width="80" height="80"/>
         <image name="noun_78729" width="80" height="80"/>
         <image name="noun_8180" width="80" height="80"/>
+        <image name="noun_97985" width="30" height="30"/>
     </resources>
 </document>

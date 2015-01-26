@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BKL-2B-34Q">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="h5g-b3-mNL">
+            <objects>
+                <viewController id="BKL-2B-34Q" customClass="MenuViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wXx-bZ-A03"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ri-uo-Mbf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XGA-d5-ngw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="xQ1-Ku-cDK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xQ1-Ku-cDK" firstAttribute="leading" secondItem="XGA-d5-ngw" secondAttribute="leadingMargin" constant="-16" id="4co-fc-OZk"/>
+                            <constraint firstItem="7Ri-uo-Mbf" firstAttribute="top" secondItem="xQ1-Ku-cDK" secondAttribute="bottom" id="F4U-vD-NHI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xQ1-Ku-cDK" secondAttribute="trailing" constant="-16" id="M6F-Zj-wtD"/>
+                            <constraint firstItem="xQ1-Ku-cDK" firstAttribute="top" secondItem="XGA-d5-ngw" secondAttribute="topMargin" id="Uos-3j-l8h"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFD-uh-72t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="401"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="galaxy" width="1818" height="1136"/>
+    </resources>
+</document>

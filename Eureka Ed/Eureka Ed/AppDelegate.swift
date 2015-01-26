@@ -13,12 +13,26 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var sideMenuViewController: TWTSideMenuViewController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        window?.tintColor = UIColor(red: 35.0/256, green: 144.0/256, blue: 181.0/256, alpha: 1.0)
+        window?.tintColor = UIColor.EKDBlueColor()
+        
+        // Initialize the main view controller and the menu view controller
+        let mainViewController: UINavigationController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UINavigationController
+        let menuViewController: MenuViewController = UIStoryboard(name: "Menu", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as MenuViewController
+        
+        // Set up the side menu view controller
+        self.sideMenuViewController = TWTSideMenuViewController(menuViewController: menuViewController, mainViewController: mainViewController)
+        self.sideMenuViewController?.shadowColor = UIColor.blackColor()
+        self.sideMenuViewController?.edgeOffset = UIOffset(horizontal: 0.0, vertical: 0.0)
+        self.sideMenuViewController?.zoomScale = 0.68
+        
+        
+        self.window?.rootViewController = self.sideMenuViewController;
         
         return true
     }
