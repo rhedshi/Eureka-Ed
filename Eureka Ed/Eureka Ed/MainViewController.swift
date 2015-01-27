@@ -25,7 +25,39 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func openButtonPressed(sender: AnyObject) {
-        self.sideMenuViewController.openMenuAnimated(true, completion: nil)
+        // self.sideMenuViewController.openMenuAnimated(true, completion: nil)
+        self.showAlert()
+    }
+    
+    func enter(#passcode: String) {
+        if passcode == "1234" {
+            self.sideMenuViewController.openMenuAnimated(true, completion: nil)
+        }
+    }
+    
+    func showAlert() {
+        let alertController = UIAlertController(title: "Enter Passcode", message: "", preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default) { (_) in }
+        let enterAction = UIAlertAction(title: "Enter", style: .Cancel) { (_) in
+            let passcodeTextField = alertController.textFields![0] as UITextField
+            
+            self.enter(passcode: passcodeTextField.text)
+        }
+        enterAction.enabled = false
+        
+        alertController.addTextFieldWithConfigurationHandler { (textField) in
+            textField.placeholder = "Passcode"
+            textField.secureTextEntry = true
+            textField.keyboardType = UIKeyboardType.NumberPad
+            
+            NSNotificationCenter.defaultCenter().addObserverForName(UITextFieldTextDidChangeNotification, object: textField, queue: NSOperationQueue.mainQueue()) { (notification) in
+                enterAction.enabled = textField.text != ""
+            }
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(enterAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     @IBAction func sideButtonPressed(sender: AnyObject) {

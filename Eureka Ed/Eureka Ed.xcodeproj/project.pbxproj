@@ -14,7 +14,6 @@
 		4D1CC5171A47827E00907A6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CC5161A47827E00907A6F /* Images.xcassets */; };
 		4D1CC51A1A47827E00907A6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CC5181A47827E00907A6F /* LaunchScreen.xib */; };
 		4D1CC5261A47827E00907A6F /* Eureka_EdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC5251A47827E00907A6F /* Eureka_EdTests.swift */; };
-		4D1CC5301A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CC52F1A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 */; };
 		4D4C93EC1A54EE3300F2FFB4 /* Baymax and Hiro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E71A54EE3300F2FFB4 /* Baymax and Hiro.jpg */; };
 		4D4C93ED1A54EE3300F2FFB4 /* Fred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E81A54EE3300F2FFB4 /* Fred.jpg */; };
 		4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */; };
@@ -59,7 +58,6 @@
 		4D1CC51F1A47827E00907A6F /* Eureka EdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eureka EdTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1CC5241A47827E00907A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D1CC5251A47827E00907A6F /* Eureka_EdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eureka_EdTests.swift; sourceTree = "<group>"; };
-		4D1CC52F1A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Star Wars - The Old Republic - Short Movie.mp4"; sourceTree = "<group>"; };
 		4D4C93E71A54EE3300F2FFB4 /* Baymax and Hiro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Baymax and Hiro.jpg"; sourceTree = "<group>"; };
 		4D4C93E81A54EE3300F2FFB4 /* Fred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fred.jpg; sourceTree = "<group>"; };
 		4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Go Go.jpg"; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				4DE8E86D1A7589D200F28F18 /* Utilities */,
 				4DF18E121A4959680006E8B7 /* Videos */,
 				4D4C93E51A54E04000F2FFB4 /* Thumbnails */,
-				4D1CC52F1A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 */,
 				4D1CC5181A47827E00907A6F /* LaunchScreen.xib */,
 				4D1CC50E1A47827E00907A6F /* Eureka_Ed.xcdatamodeld */,
 				4D1CC50A1A47827E00907A6F /* Supporting Files */,
@@ -280,6 +277,7 @@
 				TargetAttributes = {
 					4D1CC5061A47827E00907A6F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3HZ8GXD28Q;
 					};
 					4D1CC51E1A47827E00907A6F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -312,7 +310,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE8E8741A75E64000F28F18 /* Menu.storyboard in Resources */,
-				4D1CC5301A47F28800907A6F /* Star Wars - The Old Republic - Short Movie.mp4 in Resources */,
 				4D1CC5151A47827E00907A6F /* Main.storyboard in Resources */,
 				4DF18E1B1A495DEC0006E8B7 /* Fred.mp4 in Resources */,
 				4D1CC51A1A47827E00907A6F /* LaunchScreen.xib in Resources */,
@@ -480,9 +477,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Eureka Ed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eureka Ed/Eureka Ed-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -493,9 +493,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Eureka Ed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eureka Ed/Eureka Ed-Bridging-Header.h";
 			};
 			name = Release;
