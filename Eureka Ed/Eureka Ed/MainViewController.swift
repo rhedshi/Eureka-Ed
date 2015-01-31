@@ -40,7 +40,6 @@ class MainViewController: UIViewController {
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default) { (_) in }
         let enterAction = UIAlertAction(title: "Enter", style: .Cancel) { (_) in
             let passcodeTextField = alertController.textFields![0] as UITextField
-            
             self.enter(passcode: passcodeTextField.text)
         }
         enterAction.enabled = false

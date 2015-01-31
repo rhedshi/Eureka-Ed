@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D16190A1A7C8B8A00AB3544 /* Gizmo_Animatic_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B06441A7C2C8A00EF1E2A /* Gizmo_Animatic_3.mp4 */; };
+		4D16190E1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16190D1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift */; };
 		4D1CC50D1A47827E00907A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC50C1A47827E00907A6F /* AppDelegate.swift */; };
 		4D1CC5101A47827E00907A6F /* Eureka_Ed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC50E1A47827E00907A6F /* Eureka_Ed.xcdatamodeld */; };
 		4D1CC5121A47827E00907A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC5111A47827E00907A6F /* ViewController.swift */; };
@@ -28,7 +30,6 @@
 		4DE8E8741A75E64000F28F18 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE8E8731A75E64000F28F18 /* Menu.storyboard */; };
 		4DE8E8761A76007900F28F18 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8751A76007900F28F18 /* MenuViewController.swift */; };
 		4DF18E091A48F4700006E8B7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E081A48F4700006E8B7 /* Video.swift */; };
-		4DF18E111A4909A20006E8B7 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E101A4909A20006E8B7 /* VideoCell.swift */; };
 		4DF18E1A1A495DEC0006E8B7 /* Baymax and Hiro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */; };
 		4DF18E1B1A495DEC0006E8B7 /* Fred.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E161A495DEC0006E8B7 /* Fred.mp4 */; };
 		4DF18E1C1A495DEC0006E8B7 /* Go Go.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E171A495DEC0006E8B7 /* Go Go.mp4 */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D16190D1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDVideoThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D1CC5071A47827E00907A6F /* Eureka Ed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eureka Ed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1CC50B1A47827E00907A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D1CC50C1A47827E00907A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Go Go.jpg"; sourceTree = "<group>"; };
 		4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honey Lemon.jpg"; sourceTree = "<group>"; };
 		4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wasabi.jpg; sourceTree = "<group>"; };
+		4D5B06441A7C2C8A00EF1E2A /* Gizmo_Animatic_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gizmo_Animatic_3.mp4; sourceTree = "<group>"; };
 		4DCEF4E81A74209500AFAA71 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		4DCEF4E91A74209500AFAA71 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
 		4DE8E8621A743A2500F28F18 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +77,6 @@
 		4DE8E8731A75E64000F28F18 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		4DE8E8751A76007900F28F18 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4DF18E081A48F4700006E8B7 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		4DF18E101A4909A20006E8B7 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baymax and Hiro.mp4"; sourceTree = "<group>"; };
 		4DF18E161A495DEC0006E8B7 /* Fred.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fred.mp4; sourceTree = "<group>"; };
 		4DF18E171A495DEC0006E8B7 /* Go Go.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Go Go.mp4"; sourceTree = "<group>"; };
@@ -127,7 +129,6 @@
 				4DCEF4E91A74209500AFAA71 /* Series.swift */,
 				4DCEF4E81A74209500AFAA71 /* Episode.swift */,
 				4DF18E081A48F4700006E8B7 /* Video.swift */,
-				4DF18E101A4909A20006E8B7 /* VideoCell.swift */,
 				4DE8E8621A743A2500F28F18 /* MainViewController.swift */,
 				4DE8E8751A76007900F28F18 /* MenuViewController.swift */,
 				4D1CC5131A47827E00907A6F /* Main.storyboard */,
@@ -137,6 +138,7 @@
 				4DE8E86D1A7589D200F28F18 /* Utilities */,
 				4DF18E121A4959680006E8B7 /* Videos */,
 				4D4C93E51A54E04000F2FFB4 /* Thumbnails */,
+				4D5B06441A7C2C8A00EF1E2A /* Gizmo_Animatic_3.mp4 */,
 				4D1CC5181A47827E00907A6F /* LaunchScreen.xib */,
 				4D1CC50E1A47827E00907A6F /* Eureka_Ed.xcdatamodeld */,
 				4D1CC50A1A47827E00907A6F /* Supporting Files */,
@@ -194,6 +196,7 @@
 			children = (
 				4DE8E86A1A7456D900F28F18 /* EKDButton.swift */,
 				4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */,
+				4D16190D1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				4DE8E8741A75E64000F28F18 /* Menu.storyboard in Resources */,
 				4D1CC5151A47827E00907A6F /* Main.storyboard in Resources */,
+				4D16190A1A7C8B8A00AB3544 /* Gizmo_Animatic_3.mp4 in Resources */,
 				4DF18E1B1A495DEC0006E8B7 /* Fred.mp4 in Resources */,
 				4D1CC51A1A47827E00907A6F /* LaunchScreen.xib in Resources */,
 				4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */,
@@ -342,10 +346,10 @@
 			files = (
 				4DE8E8671A74420F00F28F18 /* EKDContainerView.swift in Sources */,
 				4DE8E8631A743A2500F28F18 /* MainViewController.swift in Sources */,
-				4DF18E111A4909A20006E8B7 /* VideoCell.swift in Sources */,
 				4DCEF4EA1A74209500AFAA71 /* Episode.swift in Sources */,
 				4D1CC5121A47827E00907A6F /* ViewController.swift in Sources */,
 				4DE8E86B1A7456D900F28F18 /* EKDButton.swift in Sources */,
+				4D16190E1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift in Sources */,
 				4DF18E091A48F4700006E8B7 /* Video.swift in Sources */,
 				4DE8E8761A76007900F28F18 /* MenuViewController.swift in Sources */,
 				4D1CC50D1A47827E00907A6F /* AppDelegate.swift in Sources */,

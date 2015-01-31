@@ -24,6 +24,7 @@ class Series: NSObject {
             Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Go Go", ofType: "mp4")!)!, image: UIImage(named: "Go Go.jpg")!, name: "Go Go"),
             Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Honey Lemon", ofType: "mp4")!)!, image: UIImage(named: "Honey Lemon.jpg")!, name: "Honey Lemon"),
             Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Wasabi", ofType: "mp4")!)!, image: UIImage(named: "Wasabi.jpg")!, name: "Wasabi"),
+            Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Gizmo_Animatic_3", ofType: "mp4")!)!, image: UIImage(named: "camera_logo.png")!, name: "Gizmo Animatic 3"),
         ]
         return Series(videos: videos)
     }

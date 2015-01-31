@@ -35,11 +35,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        println("\(series.videos!.count)")
         return series.videos!.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell: VideoCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as VideoCell
+        let cell: EKDVideoThumbnailCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("EKDVideoThumbnailCollectionViewCell", forIndexPath: indexPath) as EKDVideoThumbnailCollectionViewCell
         cell.video = series.videos![indexPath.row] as Video
         cell.imageView.image = cell.video!.image
         cell.imageView.contentMode = UIViewContentMode.ScaleAspectFit
@@ -49,7 +50,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // MARK: - UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as VideoCell
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as EKDVideoThumbnailCollectionViewCell
         let url = cell.video!.url
         var player: MPMoviePlayerViewController = MPMoviePlayerViewController(contentURL: url)
         self.embeddingViewController?.presentMoviePlayerViewControllerAnimated(player)
