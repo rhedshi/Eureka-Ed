@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UK6-YX-eG6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BEV-2C-vda">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="oiP-7q-LKC">
+            <objects>
+                <viewController storyboardIdentifier="InitialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BEV-2C-vda" customClass="InitialViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HmS-9A-sbk"/>
+                        <viewControllerLayoutGuide type="bottom" id="BJ2-bY-nxK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qxz-om-bfy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-cF-nAa" customClass="EKDProfile" customModule="Eureka_Ed" customModuleProvider="target">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="bdw-RV-8IT"/>
+                                    <constraint firstAttribute="width" constant="150" id="lc1-Fb-8m3"/>
+                                </constraints>
+                                <state key="normal" image="RS_CS50.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="profilePressed:" destination="BEV-2C-vda" eventType="touchUpInside" id="hf7-nP-oyN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rhed Shi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7a-aL-gUC">
+                                <rect key="frame" x="264" y="383" width="72" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="dDM-E6-zuQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.56470588235294117" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YnC-cF-nAa" secondAttribute="centerX" id="ECG-ku-WIO"/>
+                            <constraint firstAttribute="centerY" secondItem="YnC-cF-nAa" secondAttribute="centerY" id="Knn-t7-kxW"/>
+                            <constraint firstAttribute="centerX" secondItem="j7a-aL-gUC" secondAttribute="centerX" id="nnZ-Kb-xZS"/>
+                            <constraint firstItem="j7a-aL-gUC" firstAttribute="top" secondItem="YnC-cF-nAa" secondAttribute="bottom" constant="8" id="xd9-nz-DS2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O07-y1-gJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="-764"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -79,7 +127,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="IiU-Ow-sTM">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="nl3-2V-yep">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="nl3-2V-yep">
                             <connections>
                                 <action selector="addPressed:" destination="BYZ-38-t0r" id="ref-EZ-DAu"/>
                             </connections>
@@ -151,100 +199,10 @@
             </objects>
             <point key="canvasLocation" x="2655" y="69"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="T74-wQ-l3Z">
-            <objects>
-                <viewController storyboardIdentifier="PuzzleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QBx-kS-Usk" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EWG-th-lHu"/>
-                        <viewControllerLayoutGuide type="bottom" id="w9D-3s-For"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Tkc-Kp-H7Y">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puzzles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpa-Dd-pHV">
-                                <rect key="frame" x="258" y="285" width="85" height="29"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Qpa-Dd-pHV" secondAttribute="centerX" id="9Dm-7Y-eF9"/>
-                            <constraint firstAttribute="centerY" secondItem="Qpa-Dd-pHV" secondAttribute="centerY" id="aAV-5M-QBC"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JuM-Ha-jGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1225" y="1061"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="mPH-yD-UQR">
-            <objects>
-                <viewController storyboardIdentifier="StarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vld-mu-8Yw" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1mV-5q-b0k"/>
-                        <viewControllerLayoutGuide type="bottom" id="XZl-UF-5lh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jiD-kc-xnk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achievements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IT-hP-2Uy">
-                                <rect key="frame" x="222" y="285" width="156" height="29"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="8IT-hP-2Uy" secondAttribute="centerX" id="MIR-SQ-7wJ"/>
-                            <constraint firstAttribute="centerY" secondItem="8IT-hP-2Uy" secondAttribute="centerY" id="Xms-BC-vaf"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oea-j3-xwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1940" y="1061"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jwp-tn-BMF">
-            <objects>
-                <viewController storyboardIdentifier="FriendsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bzg-jj-xMi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TiE-tE-UUK"/>
-                        <viewControllerLayoutGuide type="bottom" id="zCy-lg-fn1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7FR-9C-13o">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hy-aL-aj8">
-                                <rect key="frame" x="259.5" y="285" width="82.5" height="29"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="9Hy-aL-aj8" secondAttribute="centerY" id="Dr0-Xd-lxv"/>
-                            <constraint firstAttribute="centerX" secondItem="9Hy-aL-aj8" secondAttribute="centerX" id="T3E-aC-AMj"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EWL-ic-r5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2655" y="1061"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="Zj8-nE-bro">
             <objects>
-                <viewController id="GK6-My-Zhq" customClass="MainViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GK6-My-Zhq" customClass="MainViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eCx-AJ-CUN"/>
                         <viewControllerLayoutGuide type="bottom" id="Nva-Z3-nPO"/>
@@ -347,9 +305,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dO8-6N-Z5a">
-                        <barButtonItem key="leftBarButtonItem" image="noun_97985" style="plain" id="eCP-eJ-xE9">
+                        <barButtonItem key="leftBarButtonItem" image="noun_97985" style="done" id="eCP-eJ-xE9">
                             <connections>
                                 <action selector="openButtonPressed:" destination="GK6-My-Zhq" id="Knk-G0-O2K"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="noun_49543" id="Twf-NT-Unt">
+                            <connections>
+                                <action selector="switchUserPressed:" destination="GK6-My-Zhq" id="ezT-UL-jqd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -366,7 +329,7 @@
         <!--Navigation Controller-->
         <scene sceneID="TNM-mI-tnw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UK6-YX-eG6" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UINavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UK6-YX-eG6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Ap1-og-JGs">
@@ -384,10 +347,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="RS_CS50.jpg" width="896" height="896"/>
         <image name="camera_logo" width="1500" height="1000"/>
         <image name="lightbulb_logo" width="1500" height="1000"/>
         <image name="noun_10681" width="80" height="80"/>
         <image name="noun_36120" width="80" height="80"/>
+        <image name="noun_49543" width="30" height="30"/>
         <image name="noun_78729" width="80" height="80"/>
         <image name="noun_8180" width="80" height="80"/>
         <image name="noun_97985" width="30" height="30"/>

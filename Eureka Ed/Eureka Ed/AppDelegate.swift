@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.tintColor = UIColor.EKDBlueColor()
         
         // Initialize the main view controller and the menu view controller
-        let mainViewController: UINavigationController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UINavigationController
+        let mainViewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController
         let menuViewController: MenuViewController = UIStoryboard(name: "Menu", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as MenuViewController
         
         // Set up the side menu view controller

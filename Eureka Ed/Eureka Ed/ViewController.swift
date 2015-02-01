@@ -35,7 +35,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        println("\(series.videos!.count)")
         return series.videos!.count
     }
     

@@ -17,12 +17,12 @@ class EKDVideoThumbnailCollectionViewCell: UICollectionViewCell {
         super.init(coder: aDecoder)
         
         self.layer.borderColor = UIColor.lightGrayColor().CGColor
-        self.layer.borderWidth = 1.0
+        self.layer.borderWidth = 1
         
+        self.layer.shadowColor = UIColor.darkGrayColor().CGColor
         self.layer.shadowRadius = 2
         self.layer.shadowOpacity = 0.5
         self.layer.shadowOffset = CGSizeMake(0, 2)
-        self.layer.shadowColor = UIColor.darkGrayColor().CGColor
         
         self.clipsToBounds = false
     }

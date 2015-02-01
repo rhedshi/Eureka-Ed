@@ -20,10 +20,47 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        selectedButton = (self.view.viewWithTag(selectedIndex) as EKDButton)
         self.selectButton(selectedIndex)
     }
-
+    
+    @IBAction func sideButtonPressed(sender: AnyObject) {
+        selectedButton?.selected = false
+        self.selectButton(sender.tag)
+    }
+    
+    func selectButton(index: Int) {
+        selectedIndex = index
+        selectedButton = (self.view.viewWithTag(index) as EKDButton)
+        selectedButton!.selected = true
+        
+        switch index {
+        case 1:
+            self.title = "Videos"
+        
+        case 2:
+            self.title = "Challenges"
+            
+        case 3:
+            self.title = "Achievements"
+            
+        case 4:
+            self.title = "Friends"
+            
+        default:
+            self.title = "Eureka Ed"
+        }
+        
+        if index == 1 {
+            let viewController: ViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("ViewController") as ViewController
+            viewController.embeddingViewController = self
+            container.addViewController(viewController)
+        }
+        else {
+            let viewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("CameraViewController") as UIViewController
+            container.addViewController(viewController)
+        }
+    }
+    
     @IBAction func openButtonPressed(sender: AnyObject) {
         // self.sideMenuViewController.openMenuAnimated(true, completion: nil)
         self.showAlert()
@@ -59,45 +96,9 @@ class MainViewController: UIViewController {
         self.presentViewController(alertController, animated: true, completion: nil)
     }
     
-    @IBAction func sideButtonPressed(sender: AnyObject) {
-        selectedButton?.selected = false
-        selectedButton = (sender as EKDButton)
-        self.selectButton(sender.tag)
-    }
-    
-    func selectButton(index: Int) {
-        selectedIndex = index
-        selectedButton?.selected = true
-        
-        var viewController: UIViewController?
-        
-        switch index {
-        case 1:
-            self.title = "Videos"
-            var intermediate: ViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("ViewController") as ViewController
-            intermediate.embeddingViewController = self
-            viewController = intermediate
-        
-        case 2:
-            self.title = "Challenges"
-            // viewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("PuzzleViewController") as UIViewController
-            
-        case 3:
-            self.title = "Achievements"
-            // viewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("StarViewController") as UIViewController
-            
-        case 4:
-            self.title = "Friends"
-            // viewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("FriendsViewController") as UIViewController
-            
-        default:
-            viewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("CameraViewController") as? UIViewController
-        }
-        
-        if (viewController == nil) {
-            viewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("CameraViewController") as? UIViewController
-        }
-        container.addViewController(viewController!)
+    @IBAction func switchUserPressed(sender: AnyObject) {
+        let initialViewController: InitialViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("InitialViewController") as InitialViewController
+        self.sideMenuViewController.setMainViewController(initialViewController, animated: false, closeMenu: false)
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
