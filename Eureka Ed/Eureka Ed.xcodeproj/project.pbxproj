@@ -28,6 +28,7 @@
 		4D5460BD1A7D482400A396EB /* RS_CS50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5460BC1A7D482400A396EB /* RS_CS50.jpg */; };
 		4DCEF4EA1A74209500AFAA71 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF4E81A74209500AFAA71 /* Episode.swift */; };
 		4DCEF4EB1A74209500AFAA71 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF4E91A74209500AFAA71 /* Series.swift */; };
+		4DDE47221A7DE17B00F77EB9 /* Freehand 521.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DDE47211A7DE17B00F77EB9 /* Freehand 521.ttf */; };
 		4DE8E8631A743A2500F28F18 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8621A743A2500F28F18 /* MainViewController.swift */; };
 		4DE8E8671A74420F00F28F18 /* EKDContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */; };
 		4DE8E86B1A7456D900F28F18 /* EKDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E86A1A7456D900F28F18 /* EKDButton.swift */; };
@@ -78,6 +79,7 @@
 		4D5B06441A7C2C8A00EF1E2A /* Gizmo_Animatic_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gizmo_Animatic_3.mp4; sourceTree = "<group>"; };
 		4DCEF4E81A74209500AFAA71 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		4DCEF4E91A74209500AFAA71 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		4DDE47211A7DE17B00F77EB9 /* Freehand 521.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freehand 521.ttf"; sourceTree = "<group>"; };
 		4DE8E8621A743A2500F28F18 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDContainerView.swift; sourceTree = "<group>"; };
 		4DE8E86A1A7456D900F28F18 /* EKDButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDButton.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				4D1CC50B1A47827E00907A6F /* Info.plist */,
+				4DDE47211A7DE17B00F77EB9 /* Freehand 521.ttf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				4D1CC51A1A47827E00907A6F /* LaunchScreen.xib in Resources */,
 				4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */,
 				4DF18E1D1A495DEC0006E8B7 /* Honey Lemon.mp4 in Resources */,
+				4DDE47221A7DE17B00F77EB9 /* Freehand 521.ttf in Resources */,
 				4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */,
 				4D4C93ED1A54EE3300F2FFB4 /* Fred.jpg in Resources */,
 				4D5460BD1A7D482400A396EB /* RS_CS50.jpg in Resources */,

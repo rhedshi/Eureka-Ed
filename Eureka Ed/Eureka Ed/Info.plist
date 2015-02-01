@@ -35,5 +35,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Freehand 521.ttf</string>
+	</array>
 </dict>
 </plist>
