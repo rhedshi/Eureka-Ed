@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Freehand521 BT.ttf">
+        <mutableArray key="Freehand 521 BT.ttf">
             <string>Freehand521BT-RegularC</string>
         </mutableArray>
     </customFonts>
@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-cF-nAa" customClass="EKDProfile" customModule="Eureka_Ed" customModuleProvider="target">
-                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <rect key="frame" x="125" y="225" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="bdw-RV-8IT"/>
                                     <constraint firstAttribute="width" constant="150" id="lc1-Fb-8m3"/>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rhed Shi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7a-aL-gUC">
-                                <rect key="frame" x="264" y="383" width="72" height="20.5"/>
+                                <rect key="frame" x="164" y="383" width="72" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="dDM-E6-zuQ"/>
                                 </constraints>
@@ -45,8 +45,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqg-c5-u8f">
-                                <rect key="frame" x="209" y="40" width="182.5" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqg-c5-u8f">
+                                <rect key="frame" x="195" y="49" width="211" height="56"/>
                                 <fontDescription key="fontDescription" name="Freehand521BT-RegularC" family="Freehand521 BT" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -57,22 +57,48 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcS-hF-s9E" customClass="EKDProfile" customModule="Eureka_Ed" customModuleProvider="target">
+                                <rect key="frame" x="325" y="225" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="8Yf-xx-eRo"/>
+                                    <constraint firstAttribute="width" constant="150" id="JAN-Kj-rLH"/>
+                                </constraints>
+                                <color key="tintColor" red="0.13725490200000001" green="0.56470588239999997" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="noun_11752_grey">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="profilePressed:" destination="BEV-2C-vda" eventType="touchUpInside" id="Q19-XK-Tyd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nicole Bucala" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2S-fm-hbt">
+                                <rect key="frame" x="350" y="383" width="100.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.56470588235294117" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mqg-c5-u8f" firstAttribute="top" secondItem="HmS-9A-sbk" secondAttribute="bottom" constant="150" id="55g-gx-TZH"/>
-                            <constraint firstAttribute="centerX" secondItem="YnC-cF-nAa" secondAttribute="centerX" id="ECG-ku-WIO"/>
+                            <constraint firstItem="YnC-cF-nAa" firstAttribute="centerX" secondItem="j7a-aL-gUC" secondAttribute="centerX" id="8sE-A7-H77"/>
+                            <constraint firstAttribute="centerX" secondItem="YnC-cF-nAa" secondAttribute="centerX" constant="100" id="ECG-ku-WIO"/>
+                            <constraint firstAttribute="centerX" secondItem="NcS-hF-s9E" secondAttribute="centerX" constant="-100" id="EuT-Zi-ZMe"/>
                             <constraint firstAttribute="centerX" secondItem="RCZ-ar-iUm" secondAttribute="centerX" id="GtO-VR-Hj8"/>
                             <constraint firstAttribute="centerY" secondItem="YnC-cF-nAa" secondAttribute="centerY" id="Knn-t7-kxW"/>
+                            <constraint firstItem="A2S-fm-hbt" firstAttribute="centerX" secondItem="NcS-hF-s9E" secondAttribute="centerX" id="T4b-4O-B3o"/>
                             <constraint firstItem="RCZ-ar-iUm" firstAttribute="top" secondItem="Mqg-c5-u8f" secondAttribute="bottom" constant="8" id="Tmw-F6-pAP"/>
                             <constraint firstAttribute="centerX" secondItem="Mqg-c5-u8f" secondAttribute="centerX" id="Zg6-Hp-pdF"/>
+                            <constraint firstAttribute="centerY" secondItem="NcS-hF-s9E" secondAttribute="centerY" id="hDD-Cw-iSk"/>
                             <constraint firstAttribute="centerX" secondItem="j7a-aL-gUC" secondAttribute="centerX" id="nnZ-Kb-xZS"/>
+                            <constraint firstItem="A2S-fm-hbt" firstAttribute="top" secondItem="NcS-hF-s9E" secondAttribute="bottom" constant="8" id="trq-ap-0Ok"/>
                             <constraint firstItem="j7a-aL-gUC" firstAttribute="top" secondItem="YnC-cF-nAa" secondAttribute="bottom" constant="8" id="xd9-nz-DS2"/>
                             <constraint firstItem="YnC-cF-nAa" firstAttribute="top" secondItem="Mqg-c5-u8f" secondAttribute="bottom" constant="120" id="zLR-F3-Mtl"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="55g-gx-TZH"/>
+                                <exclude reference="nnZ-Kb-xZS"/>
                             </mask>
                         </variation>
                     </view>
@@ -378,6 +404,7 @@
         <image name="camera_logo" width="1500" height="1000"/>
         <image name="lightbulb_logo" width="1500" height="1000"/>
         <image name="noun_10681" width="80" height="80"/>
+        <image name="noun_11752_grey" width="1270" height="1270"/>
         <image name="noun_36120" width="80" height="80"/>
         <image name="noun_49543" width="30" height="30"/>
         <image name="noun_78729" width="80" height="80"/>

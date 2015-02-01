@@ -10,8 +10,9 @@ import UIKit
 
 class EKDVideoThumbnailCollectionViewCell: UICollectionViewCell {
     
-    var video: Video?
     @IBOutlet weak var imageView: UIImageView!
+    
+    var video: Video?
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

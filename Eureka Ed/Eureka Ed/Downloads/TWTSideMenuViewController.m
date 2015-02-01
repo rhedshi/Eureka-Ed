@@ -363,6 +363,7 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
         [outgoingViewController didMoveToParentViewController:nil];
         [overlayView removeFromSuperview];
         [self.closeOverlayButton removeFromSuperview];
+        [self updateStatusBarStyle];
         self.open = NO;
     };
     
@@ -383,6 +384,10 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
     
     self.mainViewController = mainViewController;
     self.mainViewController.sideMenuViewController = self;
+    
+    if (!animated) {
+        [self updateStatusBarStyle];
+    }
 }
 
 #pragma mark - View Management
