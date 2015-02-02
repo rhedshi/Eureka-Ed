@@ -14,9 +14,12 @@ class MainViewController: UIViewController {
 
     var selectedIndex: Int = 1
     var selectedButton: EKDButton?
+    var profileCircleButton: EKDProfileCircleButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileCircleButton?.addTarget(self, action: "switchUserPressed:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: profileCircleButton!)
     }
     
     override func viewDidAppear(animated: Bool) {

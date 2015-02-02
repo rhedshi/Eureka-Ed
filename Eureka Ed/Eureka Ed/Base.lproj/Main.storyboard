@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-cF-nAa" customClass="EKDProfile" customModule="Eureka_Ed" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-cF-nAa" customClass="EKDProfileCircleButton" customModule="Eureka_Ed" customModuleProvider="target">
                                 <rect key="frame" x="125" y="225" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="bdw-RV-8IT"/>
@@ -57,7 +57,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcS-hF-s9E" customClass="EKDProfile" customModule="Eureka_Ed" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcS-hF-s9E" customClass="EKDProfileCircleButton" customModule="Eureka_Ed" customModuleProvider="target">
                                 <rect key="frame" x="325" y="225" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="8Yf-xx-eRo"/>
@@ -363,11 +363,6 @@
                                 <action selector="openButtonPressed:" destination="GK6-My-Zhq" id="Knk-G0-O2K"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="noun_49543" id="Twf-NT-Unt">
-                            <connections>
-                                <action selector="switchUserPressed:" destination="GK6-My-Zhq" id="ezT-UL-jqd"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -406,7 +401,6 @@
         <image name="noun_10681" width="80" height="80"/>
         <image name="noun_11752_grey" width="1270" height="1270"/>
         <image name="noun_36120" width="80" height="80"/>
-        <image name="noun_49543" width="30" height="30"/>
         <image name="noun_78729" width="80" height="80"/>
         <image name="noun_8180" width="80" height="80"/>
         <image name="noun_97985" width="30" height="30"/>

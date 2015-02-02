@@ -46,6 +46,18 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        var reusableView: UICollectionReusableView?
+        
+        if kind == UICollectionElementKindSectionHeader {
+            var headerView: EKDVideoThumbnailCollectionHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "EKDVideoThumbnailCollectionHeaderView", forIndexPath: indexPath) as EKDVideoThumbnailCollectionHeaderView
+            headerView.title.text = "Watch the latest videos."
+            reusableView = headerView
+        }
+        
+        return reusableView!
+    }
+    
     // MARK: - UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
@@ -70,7 +82,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+        return UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
     }
 }
 

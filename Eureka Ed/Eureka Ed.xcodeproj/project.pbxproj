@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D16190A1A7C8B8A00AB3544 /* Gizmo_Animatic_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B06441A7C2C8A00EF1E2A /* Gizmo_Animatic_3.mp4 */; };
 		4D16190E1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16190D1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift */; };
+		4D18CFC31A7E1D45000387E4 /* EKDVideoThumbnailCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18CFC21A7E1D45000387E4 /* EKDVideoThumbnailCollectionHeaderView.swift */; };
 		4D1CC50D1A47827E00907A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC50C1A47827E00907A6F /* AppDelegate.swift */; };
 		4D1CC5101A47827E00907A6F /* Eureka_Ed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC50E1A47827E00907A6F /* Eureka_Ed.xcdatamodeld */; };
 		4D1CC5121A47827E00907A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CC5111A47827E00907A6F /* ViewController.swift */; };
@@ -24,10 +25,10 @@
 		4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */; };
 		4D4C93EF1A54EE3300F2FFB4 /* Honey Lemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */; };
 		4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */; };
-		4D5460BB1A7D457400A396EB /* EKDProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5460BA1A7D457400A396EB /* EKDProfile.swift */; };
 		4D5460BD1A7D482400A396EB /* RS_CS50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5460BC1A7D482400A396EB /* RS_CS50.jpg */; };
 		4DCEF4EA1A74209500AFAA71 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF4E81A74209500AFAA71 /* Episode.swift */; };
 		4DCEF4EB1A74209500AFAA71 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF4E91A74209500AFAA71 /* Series.swift */; };
+		4DCFDE131A7F01FF00BE4245 /* EKDProfileCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFDE121A7F01FF00BE4245 /* EKDProfileCircleButton.swift */; };
 		4DDE47241A7DE67800F77EB9 /* Freehand 521 BT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DDE47231A7DE67800F77EB9 /* Freehand 521 BT.ttf */; };
 		4DE8E8631A743A2500F28F18 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8621A743A2500F28F18 /* MainViewController.swift */; };
 		4DE8E8671A74420F00F28F18 /* EKDContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		4D16190D1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDVideoThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D18CFC21A7E1D45000387E4 /* EKDVideoThumbnailCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDVideoThumbnailCollectionHeaderView.swift; sourceTree = "<group>"; };
 		4D1CC5071A47827E00907A6F /* Eureka Ed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eureka Ed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1CC50B1A47827E00907A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D1CC50C1A47827E00907A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,11 +76,11 @@
 		4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Go Go.jpg"; sourceTree = "<group>"; };
 		4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honey Lemon.jpg"; sourceTree = "<group>"; };
 		4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wasabi.jpg; sourceTree = "<group>"; };
-		4D5460BA1A7D457400A396EB /* EKDProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDProfile.swift; sourceTree = "<group>"; };
 		4D5460BC1A7D482400A396EB /* RS_CS50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RS_CS50.jpg; sourceTree = "<group>"; };
 		4D5B06441A7C2C8A00EF1E2A /* Gizmo_Animatic_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gizmo_Animatic_3.mp4; sourceTree = "<group>"; };
 		4DCEF4E81A74209500AFAA71 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		4DCEF4E91A74209500AFAA71 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		4DCFDE121A7F01FF00BE4245 /* EKDProfileCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDProfileCircleButton.swift; sourceTree = "<group>"; };
 		4DDE47231A7DE67800F77EB9 /* Freehand 521 BT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freehand 521 BT.ttf"; sourceTree = "<group>"; };
 		4DE8E8621A743A2500F28F18 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDContainerView.swift; sourceTree = "<group>"; };
@@ -213,8 +215,9 @@
 				4D36F7341A7CB1CB00D7CE58 /* EKDColor.swift */,
 				4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */,
 				4D36F7301A7CB06400D7CE58 /* EKDImage.swift */,
+				4D18CFC21A7E1D45000387E4 /* EKDVideoThumbnailCollectionHeaderView.swift */,
 				4D16190D1A7CA38E00AB3544 /* EKDVideoThumbnailCollectionViewCell.swift */,
-				4D5460BA1A7D457400A396EB /* EKDProfile.swift */,
+				4DCFDE121A7F01FF00BE4245 /* EKDProfileCircleButton.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -364,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5460BB1A7D457400A396EB /* EKDProfile.swift in Sources */,
 				4D36F7371A7CBA6200D7CE58 /* InitialViewController.swift in Sources */,
 				4DE8E8671A74420F00F28F18 /* EKDContainerView.swift in Sources */,
 				4DE8E8631A743A2500F28F18 /* MainViewController.swift in Sources */,
@@ -378,7 +380,9 @@
 				4D1CC50D1A47827E00907A6F /* AppDelegate.swift in Sources */,
 				4D36F7311A7CB06400D7CE58 /* EKDImage.swift in Sources */,
 				4D1CC5101A47827E00907A6F /* Eureka_Ed.xcdatamodeld in Sources */,
+				4D18CFC31A7E1D45000387E4 /* EKDVideoThumbnailCollectionHeaderView.swift in Sources */,
 				4DCEF4EB1A74209500AFAA71 /* Series.swift in Sources */,
+				4DCFDE131A7F01FF00BE4245 /* EKDProfileCircleButton.swift in Sources */,
 				4DE8E8721A75E1A700F28F18 /* TWTSideMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
