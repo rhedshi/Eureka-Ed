@@ -45,6 +45,7 @@ class EKDProfileCircleButton: UIButton {
         self.size = self.frame.size.width < self.frame.size.height ? self.frame.size.width : self.frame.size.height
         self.image = self.imageForState(UIControlState.Normal)
         self.initialize()
+        self.addSizeConstraints()
     }
     
     private func initialize() {
@@ -52,23 +53,20 @@ class EKDProfileCircleButton: UIButton {
         
         switch style {
         case .Default:
-            self.addSizeConstraints()
             self.layer.borderColor = UIColor.EKDYellowColor().CGColor
-            self.layer.borderWidth = 8
         case .BarButtonItem:
             self.layer.borderColor = UIColor.EKDBlueColor().CGColor
-            self.layer.borderWidth = 2
         }
         
+        self.layer.borderWidth = size / 18.75
         self.layer.cornerRadius = size / 2
     }
     
     private func addSizeConstraints() {
         self.setTranslatesAutoresizingMaskIntoConstraints(false)
-        let widthConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: size)
-        let heightConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: size)
-        self.addConstraint(widthConstraint)
-        self.addConstraint(heightConstraint)
+        let viewDictionary = ["self" : self]
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[self(\(size))]", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: viewDictionary))
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[self(\(size))]", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: viewDictionary))
     }
 
 }

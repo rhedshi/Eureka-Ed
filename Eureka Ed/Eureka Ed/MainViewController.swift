@@ -39,18 +39,14 @@ class MainViewController: UIViewController {
         switch index {
         case 1:
             self.title = "Videos"
-        
         case 2:
             self.title = "Challenges"
-            
         case 3:
             self.title = "Achievements"
-            
         case 4:
             self.title = "Friends"
-            
         default:
-            self.title = "Eureka Ed"
+            break
         }
         
         if index == 1 {

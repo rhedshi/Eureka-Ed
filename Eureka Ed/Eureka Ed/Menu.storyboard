@@ -8,7 +8,7 @@
         <!--Menu View Controller-->
         <scene sceneID="h5g-b3-mNL">
             <objects>
-                <viewController id="BKL-2B-34Q" customClass="MenuViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BKL-2B-34Q" customClass="MenuViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wXx-bZ-A03"/>
                         <viewControllerLayoutGuide type="bottom" id="7Ri-uo-Mbf"/>
@@ -17,18 +17,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="xQ1-Ku-cDK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Galaxy.png" translatesAutoresizingMaskIntoConstraints="NO" id="xQ1-Ku-cDK">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="68" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tk9-aB-CBm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="c0c-nC-bjR">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="175"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC2-oT-k4e" customClass="EKDProfileCircleButton" customModule="Eureka_Ed" customModuleProvider="target">
+                                            <rect key="frame" x="-75" y="87" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="Ewl-yh-LGk"/>
+                                                <constraint firstAttribute="height" constant="50" id="Lv2-hq-utJ"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="RS_CS50.jpg">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Rhed Shi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJu-gd-vgr">
+                                            <rect key="frame" x="5" y="96" width="155" height="33.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="bJu-gd-vgr" firstAttribute="leading" secondItem="XC2-oT-k4e" secondAttribute="trailing" constant="30" id="9rz-wm-QhJ"/>
+                                        <constraint firstAttribute="centerY" secondItem="XC2-oT-k4e" secondAttribute="centerY" constant="-25" id="D6n-QE-GW9"/>
+                                        <constraint firstItem="XC2-oT-k4e" firstAttribute="centerY" secondItem="bJu-gd-vgr" secondAttribute="centerY" id="d4T-5s-MnG"/>
+                                        <constraint firstAttribute="bottom" secondItem="XC2-oT-k4e" secondAttribute="bottom" id="iRm-gZ-59j"/>
+                                        <constraint firstItem="XC2-oT-k4e" firstAttribute="leading" secondItem="c0c-nC-bjR" secondAttribute="leading" constant="-75" id="uoB-CY-kt0"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="iRm-gZ-59j"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="1Du-PP-oLL" style="IBUITableViewCellStyleDefault" id="O85-0T-WNd">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O85-0T-WNd" id="K9U-4d-4o4">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Du-PP-oLL">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BKL-2B-34Q" id="uOl-Ag-oF8"/>
+                                    <outlet property="delegate" destination="BKL-2B-34Q" id="dI9-Gc-V48"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Tk9-aB-CBm" firstAttribute="bottom" secondItem="7Ri-uo-Mbf" secondAttribute="top" id="2sT-3T-U6Y"/>
+                            <constraint firstItem="Tk9-aB-CBm" firstAttribute="top" secondItem="XGA-d5-ngw" secondAttribute="topMargin" id="34k-IU-vEI"/>
                             <constraint firstItem="xQ1-Ku-cDK" firstAttribute="leading" secondItem="XGA-d5-ngw" secondAttribute="leadingMargin" constant="-16" id="4co-fc-OZk"/>
+                            <constraint firstItem="7Ri-uo-Mbf" firstAttribute="top" secondItem="Tk9-aB-CBm" secondAttribute="bottom" id="6JY-u4-JpX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tk9-aB-CBm" secondAttribute="trailing" constant="-16" id="D4F-3V-rMu"/>
                             <constraint firstItem="7Ri-uo-Mbf" firstAttribute="top" secondItem="xQ1-Ku-cDK" secondAttribute="bottom" id="F4U-vD-NHI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xQ1-Ku-cDK" secondAttribute="trailing" constant="-16" id="M6F-Zj-wtD"/>
+                            <constraint firstItem="Tk9-aB-CBm" firstAttribute="leading" secondItem="xQ1-Ku-cDK" secondAttribute="leading" id="PBN-b5-BuQ"/>
                             <constraint firstItem="xQ1-Ku-cDK" firstAttribute="top" secondItem="XGA-d5-ngw" secondAttribute="topMargin" id="Uos-3j-l8h"/>
+                            <constraint firstItem="Tk9-aB-CBm" firstAttribute="top" secondItem="xQ1-Ku-cDK" secondAttribute="top" id="XZH-c5-2ew"/>
+                            <constraint firstItem="Tk9-aB-CBm" firstAttribute="top" secondItem="XGA-d5-ngw" secondAttribute="top" id="ev1-gX-eKj"/>
+                            <constraint firstItem="Tk9-aB-CBm" firstAttribute="leading" secondItem="XGA-d5-ngw" secondAttribute="leading" id="kvt-qh-OhR"/>
+                            <constraint firstItem="Tk9-aB-CBm" firstAttribute="leading" secondItem="XGA-d5-ngw" secondAttribute="leadingMargin" constant="-16" id="n4L-oD-MIj"/>
+                            <constraint firstItem="Tk9-aB-CBm" firstAttribute="trailing" secondItem="xQ1-Ku-cDK" secondAttribute="trailing" id="qaK-uQ-yhC"/>
+                            <constraint firstAttribute="trailing" secondItem="Tk9-aB-CBm" secondAttribute="trailing" id="tnS-Cd-2Ri"/>
+                            <constraint firstItem="7Ri-uo-Mbf" firstAttribute="top" secondItem="Tk9-aB-CBm" secondAttribute="bottom" id="uZJ-NR-C7W"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2sT-3T-U6Y"/>
+                                <exclude reference="34k-IU-vEI"/>
+                                <exclude reference="D4F-3V-rMu"/>
+                                <exclude reference="PBN-b5-BuQ"/>
+                                <exclude reference="XZH-c5-2ew"/>
+                                <exclude reference="n4L-oD-MIj"/>
+                                <exclude reference="qaK-uQ-yhC"/>
+                                <exclude reference="uZJ-NR-C7W"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Tk9-aB-CBm" id="IKh-CZ-7HZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFD-uh-72t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,6 +125,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="galaxy" width="1818" height="1136"/>
+        <image name="Galaxy.png" width="1818" height="1136"/>
+        <image name="RS_CS50.jpg" width="896" height="896"/>
     </resources>
 </document>

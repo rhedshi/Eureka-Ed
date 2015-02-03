@@ -28,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set up the side menu view controller
         self.sideMenuViewController = TWTSideMenuViewController(menuViewController: menuViewController, mainViewController: mainViewController)
         self.sideMenuViewController?.shadowColor = UIColor.blackColor()
-        self.sideMenuViewController?.edgeOffset = UIOffset(horizontal: 0.0, vertical: 0.0)
-        self.sideMenuViewController?.zoomScale = 0.68
+        self.sideMenuViewController?.edgeOffset = UIOffset(horizontal: -150.0, vertical: 0.0)
+        self.sideMenuViewController?.zoomScale = 0.75
         
         
         self.window?.rootViewController = self.sideMenuViewController;
