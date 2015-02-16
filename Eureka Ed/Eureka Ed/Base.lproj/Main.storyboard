@@ -233,7 +233,110 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnk-lE-lNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="69"/>
+            <point key="canvasLocation" x="1936" y="-764"/>
+        </scene>
+        <!--Video Interaction Player View Controller-->
+        <scene sceneID="Ies-Pn-a1G">
+            <objects>
+                <viewController storyboardIdentifier="EKDVideoInteractionPlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="P9Q-SR-fY6" customClass="EKDVideoInteractionPlayerViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p4h-dV-s7g"/>
+                        <viewControllerLayoutGuide type="bottom" id="igl-9g-fUb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GPq-Yn-bBL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYa-rW-T8x" customClass="EKDContainerView" customModule="Eureka_Ed" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="771-Iq-AN9">
+                                <rect key="frame" x="0.0" y="536" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="q2A-Y8-KSj"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9Ng-Ud-Dau"/>
+                                    <barButtonItem title="Next" id="7Wc-ua-1uH">
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="P9Q-SR-fY6" id="eD0-DX-c5b"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="igl-9g-fUb" firstAttribute="top" secondItem="lYa-rW-T8x" secondAttribute="bottom" id="53E-Iy-qWN"/>
+                            <constraint firstItem="igl-9g-fUb" firstAttribute="top" secondItem="771-Iq-AN9" secondAttribute="bottom" constant="-44" id="GrE-8q-1fi"/>
+                            <constraint firstItem="771-Iq-AN9" firstAttribute="leading" secondItem="GPq-Yn-bBL" secondAttribute="leading" id="NCB-Rq-b2V"/>
+                            <constraint firstAttribute="trailing" secondItem="771-Iq-AN9" secondAttribute="trailing" id="NQf-9l-wFO"/>
+                            <constraint firstAttribute="trailing" secondItem="lYa-rW-T8x" secondAttribute="trailing" id="o2Z-YP-dIQ"/>
+                            <constraint firstItem="lYa-rW-T8x" firstAttribute="leading" secondItem="GPq-Yn-bBL" secondAttribute="leading" id="ve0-iJ-YsW"/>
+                            <constraint firstItem="lYa-rW-T8x" firstAttribute="top" secondItem="p4h-dV-s7g" secondAttribute="bottom" id="wC1-Uf-Iyj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i4f-fX-UKW"/>
+                    <connections>
+                        <outlet property="bottomBar" destination="771-Iq-AN9" id="YjZ-Mx-7UB"/>
+                        <outlet property="bottomConstraint" destination="GrE-8q-1fi" id="ovg-Wc-Pfu"/>
+                        <outlet property="container" destination="lYa-rW-T8x" id="uf9-ji-q3g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0P-ZD-dX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2748" y="69"/>
+        </scene>
+        <!--Interaction View Controller-->
+        <scene sceneID="sdM-Yk-75z">
+            <objects>
+                <viewController storyboardIdentifier="Gizmo-Animatic-Interaction-1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lOQ-9y-cg4" customClass="EKDInteractionViewController" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Obs-m7-Bzg"/>
+                        <viewControllerLayoutGuide type="bottom" id="i1W-Xd-Gi4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mRU-xQ-oWs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-yy-n2V">
+                                <rect key="frame" x="16" y="285" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.76470588240000004" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Zft-AT-vHZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="v9b-Hk-0zS"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epS-i6-bJD">
+                                <rect key="frame" x="464" y="285" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.56470588239999997" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L4f-ov-PTD"/>
+                                    <constraint firstAttribute="width" constant="120" id="ODo-nm-vFw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="epS-i6-bJD" firstAttribute="trailing" secondItem="mRU-xQ-oWs" secondAttribute="trailingMargin" id="5Jb-P0-JLz"/>
+                            <constraint firstAttribute="centerY" secondItem="epS-i6-bJD" secondAttribute="centerY" id="J58-w9-nOf"/>
+                            <constraint firstItem="LVC-yy-n2V" firstAttribute="leading" secondItem="mRU-xQ-oWs" secondAttribute="leadingMargin" id="TaQ-Ap-zF0"/>
+                            <constraint firstAttribute="centerY" secondItem="LVC-yy-n2V" secondAttribute="centerY" id="mk2-lj-knq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="LVC-yy-n2V" id="5Xv-Bk-cwE"/>
+                        <outlet property="targetArea" destination="epS-i6-bJD" id="Gl4-UK-5a7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOU-d9-VXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3463" y="69"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gkn-JT-uNK">
@@ -270,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyn-AM-c4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2655" y="69"/>
+            <point key="canvasLocation" x="2651" y="-764"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Zj8-nE-bro">
@@ -420,6 +523,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv8-1x-saQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="235" y="-764"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BC4-LK-ZSQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cHd-Zm-X83" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="MGy-wB-ipx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="P9Q-SR-fY6" kind="relationship" relationship="rootViewController" id="tEl-dn-cGl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xuZ-qb-o4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1936" y="69"/>
         </scene>
     </scenes>
     <resources>

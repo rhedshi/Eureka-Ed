@@ -32,6 +32,11 @@ extension UIColor {
         }
     }
     
+    class func randomColor() -> UIColor {
+        srand48(Int(NSDate().timeIntervalSince1970))
+        return UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1.0)
+    }
+    
     class func EKDBlueColor() -> UIColor {
         
         return UIColor.hexadecimal("#2390B5")

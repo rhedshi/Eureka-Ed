@@ -28,5 +28,4 @@ class Series: NSObject {
         ]
         return Series(videos: videos)
     }
-    
 }

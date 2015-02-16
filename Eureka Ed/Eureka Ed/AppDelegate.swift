@@ -19,11 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        UINavigationBar.appearance().translucent = false
+        
         window?.tintColor = UIColor.EKDBlueColor()
         
         // Initialize the main view controller and the menu view controller
         let mainViewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController
-        let menuViewController: MenuViewController = UIStoryboard(name: "Menu", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as MenuViewController
+        let menuViewController: UIViewController = UIStoryboard(name: "Menu", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController
         
         // Set up the side menu view controller
         self.sideMenuViewController = TWTSideMenuViewController(menuViewController: menuViewController, mainViewController: mainViewController)

@@ -19,7 +19,6 @@ class InitialViewController: UIViewController {
         let mainViewController: MainViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("MainViewController") as MainViewController
         mainViewController.profileCircleButton = EKDProfileCircleButton(name: "", image: profile.image!, style: .BarButtonItem)
         let navigationController: UINavigationController = UINavigationController(rootViewController: mainViewController)
-        navigationController.navigationBar.translucent = false
         self.sideMenuViewController.setMainViewController(navigationController, animated: true, closeMenu: false)
     }
     

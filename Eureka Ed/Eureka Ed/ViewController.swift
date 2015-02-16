@@ -46,25 +46,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        var reusableView: UICollectionReusableView?
-        
-        if kind == UICollectionElementKindSectionHeader {
-            var headerView: EKDVideoThumbnailCollectionHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "EKDVideoThumbnailCollectionHeaderView", forIndexPath: indexPath) as EKDVideoThumbnailCollectionHeaderView
-            headerView.title.text = "Watch the latest videos."
-            reusableView = headerView
-        }
-        
-        return reusableView!
-    }
-    
     // MARK: - UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as EKDVideoThumbnailCollectionViewCell
-        let url = cell.video!.url
-        var player: MPMoviePlayerViewController = MPMoviePlayerViewController(contentURL: url)
-        self.embeddingViewController?.presentMoviePlayerViewControllerAnimated(player)
+        let videoInteractionPlayerViewController: EKDVideoInteractionPlayerViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("EKDVideoInteractionPlayerViewController") as EKDVideoInteractionPlayerViewController
+        let navigationController: UINavigationController = UINavigationController(rootViewController: videoInteractionPlayerViewController)
+        self.embeddingViewController?.presentViewController(navigationController, animated: true, completion: { () -> Void in
+            videoInteractionPlayerViewController.play()
+        })
+        
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout
