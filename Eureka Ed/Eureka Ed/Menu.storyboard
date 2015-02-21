@@ -33,7 +33,7 @@
                                                 <constraint firstAttribute="width" constant="50" id="Ewl-yh-LGk"/>
                                                 <constraint firstAttribute="height" constant="50" id="Lv2-hq-utJ"/>
                                             </constraints>
-                                            <state key="normal" title="Button" image="RS_CS50.jpg">
+                                            <state key="normal" title="Button" image="principal">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
@@ -126,6 +126,6 @@
     </scenes>
     <resources>
         <image name="Galaxy.png" width="1818" height="1136"/>
-        <image name="RS_CS50.jpg" width="896" height="896"/>
+        <image name="principal" width="1304" height="1304"/>
     </resources>
 </document>

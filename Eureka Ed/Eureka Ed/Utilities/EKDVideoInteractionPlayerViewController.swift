@@ -19,6 +19,12 @@ class EKDVideoInteractionPlayerViewController: UIViewController, EKDInteractionV
         Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Wasabi", ofType: "mp4")!)!, image: UIImage(named: "Wasabi.jpg")!, name: "Wasabi")
     ]
     
+    var interactions: [EKDInteractionViewController] = [
+        UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("Gizmo_Pranks_Interaction_1") as EKDInteractionViewController
+    ]
+    
+    var cameraViewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("CameraViewController") as UIViewController
+    
     @IBOutlet weak var container: EKDContainerView!
     @IBOutlet weak var bottomBar: UIToolbar!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
@@ -29,9 +35,7 @@ class EKDVideoInteractionPlayerViewController: UIViewController, EKDInteractionV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let interactionViewController: EKDInteractionViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("Gizmo-Pranks-Interaction-1") as EKDInteractionViewController
-        interactionViewController.delegate = self
-        container.addViewController(interactionViewController)
+        container.addViewController(cameraViewController)
     }
     
     @IBAction func nextButtonPressed(sender: AnyObject) {
@@ -63,12 +67,15 @@ class EKDVideoInteractionPlayerViewController: UIViewController, EKDInteractionV
         
         switch reason {
         case .PlaybackEnded:
-            self.view.backgroundColor = UIColor.whiteColor()
+            break
         case .UserExited:
-            self.view.backgroundColor = UIColor.redColor()
+            break
         default:
             break
         }
+        
+        container.addViewController(interactions.first!)
+        interactions.first!.delegate = self
         
         self.dismissMoviePlayerViewControllerAnimated()
     }

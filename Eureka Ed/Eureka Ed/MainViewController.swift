@@ -55,14 +55,14 @@ class MainViewController: UIViewController {
             container.addViewController(viewController)
         }
         else {
-            let viewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("CameraViewController") as UIViewController
+            let viewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("ComingSoonViewController") as UIViewController
             container.addViewController(viewController)
         }
     }
     
     @IBAction func openButtonPressed(sender: AnyObject) {
-        // self.sideMenuViewController.openMenuAnimated(true, completion: nil)
-        self.showAlert()
+        self.sideMenuViewController.openMenuAnimated(true, completion: nil)
+        // self.showAlert()
     }
     
     func enter(#passcode: String) {
