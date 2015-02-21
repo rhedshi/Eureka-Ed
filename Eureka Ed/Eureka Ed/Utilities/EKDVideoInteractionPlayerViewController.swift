@@ -29,7 +29,7 @@ class EKDVideoInteractionPlayerViewController: UIViewController, EKDInteractionV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let interactionViewController: EKDInteractionViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("Gizmo-Animatic-Interaction-1") as EKDInteractionViewController
+        let interactionViewController: EKDInteractionViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("Gizmo-Pranks-Interaction-1") as EKDInteractionViewController
         interactionViewController.delegate = self
         container.addViewController(interactionViewController)
     }
@@ -76,7 +76,6 @@ class EKDVideoInteractionPlayerViewController: UIViewController, EKDInteractionV
     // MARK: - EKDInteractionViewControllerDelegate
     
     func didCompleteInteraction() {
-        println("as;dlkfjas;ldkfjad;f")
         bottomConstraint.constant = 0
         bottomBar.layoutIfNeeded()
     }
