@@ -37,8 +37,8 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Rhed Shi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJu-gd-vgr">
-                                            <rect key="frame" x="5" y="96" width="155" height="33.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Principal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJu-gd-vgr">
+                                            <rect key="frame" x="5" y="96" width="147" height="33.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -82,6 +82,34 @@
                                     <outlet property="delegate" destination="BKL-2B-34Q" id="dI9-Gc-V48"/>
                                 </connections>
                             </tableView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4h-x9-aHF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sIO-Pe-0iK">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parent Portal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yh-th-mnK">
+                                            <rect key="frame" x="150" y="231" width="167.5" height="38"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7a-da-3P1">
+                                            <rect key="frame" x="183" y="281" width="100" height="20.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="b7a-da-3P1" firstAttribute="centerX" secondItem="8Yh-th-mnK" secondAttribute="centerX" id="32n-yf-YA9"/>
+                                        <constraint firstItem="8Yh-th-mnK" firstAttribute="leading" secondItem="sIO-Pe-0iK" secondAttribute="leading" constant="150" id="Glq-ES-HRy"/>
+                                        <constraint firstItem="b7a-da-3P1" firstAttribute="top" secondItem="8Yh-th-mnK" secondAttribute="bottom" constant="12" id="N5l-DA-322"/>
+                                        <constraint firstAttribute="centerY" secondItem="8Yh-th-mnK" secondAttribute="centerY" constant="50" id="xle-HK-EaR"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -94,11 +122,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="xQ1-Ku-cDK" secondAttribute="trailing" constant="-16" id="M6F-Zj-wtD"/>
                             <constraint firstItem="Tk9-aB-CBm" firstAttribute="leading" secondItem="xQ1-Ku-cDK" secondAttribute="leading" id="PBN-b5-BuQ"/>
                             <constraint firstItem="xQ1-Ku-cDK" firstAttribute="top" secondItem="XGA-d5-ngw" secondAttribute="topMargin" id="Uos-3j-l8h"/>
+                            <constraint firstItem="7Ri-uo-Mbf" firstAttribute="top" secondItem="w4h-x9-aHF" secondAttribute="bottom" id="VA1-5L-t0T"/>
                             <constraint firstItem="Tk9-aB-CBm" firstAttribute="top" secondItem="xQ1-Ku-cDK" secondAttribute="top" id="XZH-c5-2ew"/>
+                            <constraint firstItem="w4h-x9-aHF" firstAttribute="top" secondItem="XGA-d5-ngw" secondAttribute="top" id="e43-ad-igl"/>
                             <constraint firstItem="Tk9-aB-CBm" firstAttribute="top" secondItem="XGA-d5-ngw" secondAttribute="top" id="ev1-gX-eKj"/>
+                            <constraint firstItem="w4h-x9-aHF" firstAttribute="leading" secondItem="XGA-d5-ngw" secondAttribute="leading" id="gAI-Kv-xDQ"/>
                             <constraint firstItem="Tk9-aB-CBm" firstAttribute="leading" secondItem="XGA-d5-ngw" secondAttribute="leading" id="kvt-qh-OhR"/>
                             <constraint firstItem="Tk9-aB-CBm" firstAttribute="leading" secondItem="XGA-d5-ngw" secondAttribute="leadingMargin" constant="-16" id="n4L-oD-MIj"/>
                             <constraint firstItem="Tk9-aB-CBm" firstAttribute="trailing" secondItem="xQ1-Ku-cDK" secondAttribute="trailing" id="qaK-uQ-yhC"/>
+                            <constraint firstAttribute="trailing" secondItem="w4h-x9-aHF" secondAttribute="trailing" id="rDi-HR-3k4"/>
                             <constraint firstAttribute="trailing" secondItem="Tk9-aB-CBm" secondAttribute="trailing" id="tnS-Cd-2Ri"/>
                             <constraint firstItem="7Ri-uo-Mbf" firstAttribute="top" secondItem="Tk9-aB-CBm" secondAttribute="bottom" id="uZJ-NR-C7W"/>
                         </constraints>
@@ -116,6 +148,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="blurView" destination="w4h-x9-aHF" id="xLX-LV-6He"/>
                         <outlet property="tableView" destination="Tk9-aB-CBm" id="IKh-CZ-7HZ"/>
                     </connections>
                 </viewController>

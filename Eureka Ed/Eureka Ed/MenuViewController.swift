@@ -11,6 +11,7 @@ import UIKit
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var blurView: UIVisualEffectView!
     
     var backgroundImageView: UIImageView?
     let datasource = ["Home", "Profile", "Kids", "Store", "Account", "Settings", "Logout"]
@@ -19,6 +20,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         self.setUpBackgroundImage()
         self.setUpTableView()
+        
+        self.view.bringSubviewToFront(blurView)
     }
     
     func setUpBackgroundImage() {
