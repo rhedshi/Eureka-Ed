@@ -49,10 +49,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // MARK: - UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let videoInteractionPlayerViewController: EKDVideoInteractionPlayerViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("EKDVideoInteractionPlayerViewController") as EKDVideoInteractionPlayerViewController
+        let videoInteractionPlayerViewController: Gizmo_Pranks_Episode_Viewcontroller = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("EKDVideoInteractionPlayerViewController") as Gizmo_Pranks_Episode_Viewcontroller
         let navigationController: UINavigationController = UINavigationController(rootViewController: videoInteractionPlayerViewController)
         self.embeddingViewController?.presentViewController(navigationController, animated: true, completion: { () -> Void in
-            videoInteractionPlayerViewController.play()
+            videoInteractionPlayerViewController.nextButtonPressed("")
         })
         
     }
