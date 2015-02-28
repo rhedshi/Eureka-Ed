@@ -28,6 +28,8 @@ class Gizmo_Pranks_Interaction1_ViewController: EKDInteractionViewController {
     
     @IBOutlet var options: [EKDInteractionBlock]!
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     var finished: Int = 0
     
     override func viewDidLoad() {
@@ -73,6 +75,7 @@ class Gizmo_Pranks_Interaction1_ViewController: EKDInteractionViewController {
                 block.center = block.superview!.convertPoint(target.center, fromView: target.superview)
                 block.setTranslatesAutoresizingMaskIntoConstraints(true)
                 if finished == 4 {
+                    imageView.image = UIImage(named: "Interaction_1b")
                     delegate?.didCompleteInteraction()
                 }
             }

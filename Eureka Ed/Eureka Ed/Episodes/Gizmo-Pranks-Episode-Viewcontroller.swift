@@ -14,9 +14,9 @@ class Gizmo_Pranks_Episode_Viewcontroller: EKDVideoInteractionPlayerViewControll
     var player: MPMoviePlayerViewController?
     
     var videos: [Video] = [
-        Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Baymax and Hiro", ofType: "mp4")!)!, image: UIImage(named: "Baymax and Hiro.jpg")!, name: "Baymax and Hiro"),
-        Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Honey Lemon", ofType: "mp4")!)!, image: UIImage(named: "Honey Lemon.jpg")!, name: "Honey Lemon"),
-        Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Wasabi", ofType: "mp4")!)!, image: UIImage(named: "Wasabi.jpg")!, name: "Wasabi")
+        Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Gizmo_Animation_1", ofType: "mp4")!)!, image: UIImage(named: "camera_logo.png")!, name: "Gizmo Animation 1"),
+        Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Gizmo_Animation_2", ofType: "mp4")!)!, image: UIImage(named: "camera_logo.png")!, name: "Gizmo Animation 2"),
+        Video(url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Gizmo_Animation_3", ofType: "mp4")!)!, image: UIImage(named: "camera_logo.png")!, name: "Gizmo Animation 3")
     ]
     
     var interactions: [EKDInteractionViewController] = [
