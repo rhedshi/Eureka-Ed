@@ -31,7 +31,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // MARK: - UICollectionViewDatasource
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+        return 2
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,6 +44,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.imageView.image = cell.video!.image
         cell.imageView.contentMode = UIViewContentMode.ScaleAspectFit
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        var reusableView = UICollectionReusableView()
+        
+        if kind == UICollectionElementKindSectionHeader {
+            var headerView: EKDCollectionHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "EKDCollectionHeaderView", forIndexPath: indexPath) as EKDCollectionHeaderView
+            headerView.title.text = indexPath.section == 0 ? "Episodes" : "Characters"
+            
+            reusableView = headerView
+        }
+        
+        return reusableView
     }
     
     // MARK: - UICollectionViewDelegate

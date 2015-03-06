@@ -24,6 +24,7 @@
 		4D4C93EF1A54EE3300F2FFB4 /* Honey Lemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */; };
 		4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */; };
 		4D5460BD1A7D482400A396EB /* RS_CS50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5460BC1A7D482400A396EB /* RS_CS50.jpg */; };
+		4D87F3531AA9966300D630FD /* EKDCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87F3521AA9966200D630FD /* EKDCollectionHeaderView.swift */; };
 		4DB6B0FC1A80254200405B86 /* Galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB6B0FB1A80254100405B86 /* Galaxy.png */; };
 		4DB702231AA0EC02001A911C /* Gizmo_Animation_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DB702201AA0EC02001A911C /* Gizmo_Animation_1.mp4 */; };
 		4DB702241AA0EC02001A911C /* Gizmo_Animation_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DB702211AA0EC02001A911C /* Gizmo_Animation_2.mp4 */; };
@@ -91,6 +92,7 @@
 		4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honey Lemon.jpg"; sourceTree = "<group>"; };
 		4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wasabi.jpg; sourceTree = "<group>"; };
 		4D5460BC1A7D482400A396EB /* RS_CS50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RS_CS50.jpg; sourceTree = "<group>"; };
+		4D87F3521AA9966200D630FD /* EKDCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDCollectionHeaderView.swift; sourceTree = "<group>"; };
 		4DB6B0FB1A80254100405B86 /* Galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Galaxy.png; sourceTree = "<group>"; };
 		4DB702201AA0EC02001A911C /* Gizmo_Animation_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gizmo_Animation_1.mp4; sourceTree = "<group>"; };
 		4DB702211AA0EC02001A911C /* Gizmo_Animation_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gizmo_Animation_2.mp4; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				4DE8E86A1A7456D900F28F18 /* EKDButton.swift */,
+				4D87F3521AA9966200D630FD /* EKDCollectionHeaderView.swift */,
 				4DE8E8661A74420F00F28F18 /* EKDContainerView.swift */,
 				4DE867271A919EFD0040FE6E /* EKDInteractionBlock.swift */,
 				4DE867251A916D710040FE6E /* EKDInteractionViewController.swift */,
@@ -457,6 +460,7 @@
 				4DE8E8671A74420F00F28F18 /* EKDContainerView.swift in Sources */,
 				4DE8E8631A743A2500F28F18 /* MainViewController.swift in Sources */,
 				4DB88EE61A9FCCAF00AB9164 /* Gizmo-Pranks-Episode-Viewcontroller.swift in Sources */,
+				4D87F3531AA9966300D630FD /* EKDCollectionHeaderView.swift in Sources */,
 				4DCEF4EA1A74209500AFAA71 /* Episode.swift in Sources */,
 				4D1CC5121A47827E00907A6F /* ViewController.swift in Sources */,
 				4DE8E86B1A7456D900F28F18 /* EKDButton.swift in Sources */,

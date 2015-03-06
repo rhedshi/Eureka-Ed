@@ -34,7 +34,7 @@ class Gizmo_Pranks_Episode_Viewcontroller: EKDVideoInteractionPlayerViewControll
     override func viewDidLoad() {
         super.viewDidLoad()
         continueButton.hidden = true
-        continueButton.layer.cornerRadius = 8
+        continueButton.layer.cornerRadius = 6
         container.addViewController(cameraViewController)
     }
     
@@ -69,7 +69,7 @@ class Gizmo_Pranks_Episode_Viewcontroller: EKDVideoInteractionPlayerViewControll
         
         switch reason {
         case .PlaybackEnded:
-            container.hidden = false
+            // container.hidden = false
             if !interactions.isEmpty {
                 container.addViewController(interactions.first!)
                 interactions.first!.delegate = self
@@ -79,7 +79,7 @@ class Gizmo_Pranks_Episode_Viewcontroller: EKDVideoInteractionPlayerViewControll
                 container.addViewController(cameraViewController)
             }
         case .UserExited:
-            container.hidden = true
+            // container.hidden = true
             continueButton.hidden = false
         default:
             break

@@ -130,15 +130,37 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Visit our website at https://www.eurekaedapps.com. Email us at learnwithus@eurekaedapps.com." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IBO-dL-eaI">
+                                <rect key="frame" x="16" y="562" width="568" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0li-N5-ec1"/>
+                                    <constraint firstAttribute="width" constant="150" id="Fj7-j1-0La"/>
+                                    <constraint firstAttribute="width" id="NJG-ft-yag"/>
+                                    <constraint firstAttribute="height" id="Ywr-Qk-BHk"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Fj7-j1-0La"/>
+                                        <exclude reference="NJG-ft-yag"/>
+                                        <exclude reference="Ywr-Qk-BHk"/>
+                                    </mask>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.56470588235294117" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vkl-WB-Fmv" firstAttribute="top" secondItem="OC8-5A-tkI" secondAttribute="bottom" constant="8" id="2Js-OY-3TE"/>
                             <constraint firstItem="1Z0-ud-qBF" firstAttribute="top" secondItem="5ze-91-AaZ" secondAttribute="bottom" constant="8" id="4Md-MP-iB8"/>
                             <constraint firstItem="Mqg-c5-u8f" firstAttribute="top" secondItem="HmS-9A-sbk" secondAttribute="bottom" constant="150" id="55g-gx-TZH"/>
+                            <constraint firstItem="BJ2-bY-nxK" firstAttribute="top" secondItem="IBO-dL-eaI" secondAttribute="bottom" constant="8" id="5aR-RH-eWM"/>
                             <constraint firstItem="OC8-5A-tkI" firstAttribute="centerX" secondItem="Vkl-WB-Fmv" secondAttribute="centerX" id="6Dc-c5-71K"/>
                             <constraint firstAttribute="centerY" secondItem="5ze-91-AaZ" secondAttribute="centerY" id="8i9-fV-Mdd"/>
                             <constraint firstItem="YnC-cF-nAa" firstAttribute="centerX" secondItem="j7a-aL-gUC" secondAttribute="centerX" id="8sE-A7-H77"/>
+                            <constraint firstAttribute="centerX" secondItem="IBO-dL-eaI" secondAttribute="centerX" id="ArC-9C-3YU"/>
                             <constraint firstAttribute="centerX" secondItem="OC8-5A-tkI" secondAttribute="centerX" constant="255" id="Asx-XL-Bn4"/>
                             <constraint firstAttribute="centerX" secondItem="5ze-91-AaZ" secondAttribute="centerX" constant="-255" id="BEc-cj-0wY"/>
                             <constraint firstAttribute="centerX" secondItem="YnC-cF-nAa" secondAttribute="centerX" constant="85" id="ECG-ku-WIO"/>
@@ -149,7 +171,9 @@
                             <constraint firstItem="YnC-cF-nAa" firstAttribute="leading" secondItem="OC8-5A-tkI" secondAttribute="trailing" constant="50" id="Kvq-E3-R5U"/>
                             <constraint firstItem="A2S-fm-hbt" firstAttribute="centerX" secondItem="NcS-hF-s9E" secondAttribute="centerX" id="T4b-4O-B3o"/>
                             <constraint firstItem="RCZ-ar-iUm" firstAttribute="top" secondItem="Mqg-c5-u8f" secondAttribute="bottom" constant="8" id="Tmw-F6-pAP"/>
+                            <constraint firstItem="IBO-dL-eaI" firstAttribute="leading" secondItem="Qxz-om-bfy" secondAttribute="leadingMargin" id="Ul2-TO-fwW"/>
                             <constraint firstAttribute="centerX" secondItem="Mqg-c5-u8f" secondAttribute="centerX" id="Zg6-Hp-pdF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IBO-dL-eaI" secondAttribute="trailing" id="exL-QZ-Cr6"/>
                             <constraint firstAttribute="centerY" secondItem="NcS-hF-s9E" secondAttribute="centerY" id="hDD-Cw-iSk"/>
                             <constraint firstAttribute="centerX" secondItem="j7a-aL-gUC" secondAttribute="centerX" id="nnZ-Kb-xZS"/>
                             <constraint firstAttribute="centerY" secondItem="OC8-5A-tkI" secondAttribute="centerY" id="sDj-Cs-SQb"/>
@@ -187,7 +211,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WcL-v1-Rxx">
                                     <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="90"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
@@ -216,6 +240,45 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EKDCollectionHeaderView" id="KXk-HG-aJm" customClass="EKDCollectionHeaderView" customModule="Eureka_Ed" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKD-2z-Bzo">
+                                            <rect key="frame" x="25" y="30" width="567" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="hGf-vd-CoU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                            <color key="textColor" red="0.13725490200000001" green="0.56470588239999997" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAt-9X-VzM">
+                                            <rect key="frame" x="8" y="83" width="584" height="1"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="Xns-hN-oF4"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="PAt-9X-VzM" secondAttribute="bottom" constant="-2" id="0jy-iO-qkg"/>
+                                        <constraint firstItem="QKD-2z-Bzo" firstAttribute="top" secondItem="PAt-9X-VzM" secondAttribute="bottom" constant="8" symbolic="YES" id="V8O-0G-nNw"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PAt-9X-VzM" secondAttribute="trailing" id="aSe-sn-esX"/>
+                                        <constraint firstAttribute="trailing" secondItem="QKD-2z-Bzo" secondAttribute="trailing" constant="8" id="b1d-IX-cBG"/>
+                                        <constraint firstItem="QKD-2z-Bzo" firstAttribute="leading" secondItem="KXk-HG-aJm" secondAttribute="leading" constant="25" id="bEK-ag-fiI"/>
+                                        <constraint firstAttribute="bottom" secondItem="QKD-2z-Bzo" secondAttribute="bottom" constant="20" id="lL8-Sg-sKp"/>
+                                        <constraint firstItem="PAt-9X-VzM" firstAttribute="leading" secondItem="KXk-HG-aJm" secondAttribute="leadingMargin" id="oG8-eN-Zvc"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="V8O-0G-nNw"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <outlet property="title" destination="QKD-2z-Bzo" id="AhX-He-DMU"/>
+                                    </connections>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="D1E-Ei-K9q"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="See-BY-C56"/>
@@ -247,11 +310,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="IiU-Ow-sTM">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="nl3-2V-yep">
-                            <connections>
-                                <action selector="addPressed:" destination="BYZ-38-t0r" id="ref-EZ-DAu"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="nl3-2V-yep"/>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="AKJ-9a-KZ1" id="V9A-Da-Vqv"/>
@@ -298,7 +357,7 @@
             </objects>
             <point key="canvasLocation" x="1936" y="-764"/>
         </scene>
-        <!--Gizmo Pranks Episode Viewcontroller-->
+        <!--Gizmo Pranks on Pranks-->
         <scene sceneID="Ies-Pn-a1G">
             <objects>
                 <viewController storyboardIdentifier="EKDVideoInteractionPlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="P9Q-SR-fY6" customClass="Gizmo_Pranks_Episode_Viewcontroller" customModule="Eureka_Ed" customModuleProvider="target" sceneMemberID="viewController">
@@ -315,13 +374,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWo-EH-4Me">
-                                <rect key="frame" x="210" y="237.5" width="180" height="60"/>
+                                <rect key="frame" x="180" y="394" width="240" height="48"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.56470588239999997" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="0mL-6Q-Wyc"/>
-                                    <constraint firstAttribute="height" constant="60" id="YZC-oy-oUW"/>
+                                    <constraint firstAttribute="width" constant="240" id="0mL-6Q-Wyc"/>
+                                    <constraint firstAttribute="height" constant="48" id="YZC-oy-oUW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -352,13 +411,13 @@
                             <constraint firstItem="771-Iq-AN9" firstAttribute="leading" secondItem="GPq-Yn-bBL" secondAttribute="leading" id="NCB-Rq-b2V"/>
                             <constraint firstAttribute="trailing" secondItem="771-Iq-AN9" secondAttribute="trailing" id="NQf-9l-wFO"/>
                             <constraint firstAttribute="centerX" secondItem="RWo-EH-4Me" secondAttribute="centerX" id="ajn-CP-5RD"/>
-                            <constraint firstAttribute="centerY" secondItem="RWo-EH-4Me" secondAttribute="centerY" id="g5g-Zg-ltn"/>
+                            <constraint firstAttribute="centerY" secondItem="RWo-EH-4Me" secondAttribute="centerY" constant="-150" id="g5g-Zg-ltn"/>
                             <constraint firstAttribute="trailing" secondItem="lYa-rW-T8x" secondAttribute="trailing" id="o2Z-YP-dIQ"/>
                             <constraint firstItem="lYa-rW-T8x" firstAttribute="leading" secondItem="GPq-Yn-bBL" secondAttribute="leading" id="ve0-iJ-YsW"/>
                             <constraint firstItem="lYa-rW-T8x" firstAttribute="top" secondItem="p4h-dV-s7g" secondAttribute="bottom" id="wC1-Uf-Iyj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="i4f-fX-UKW">
+                    <navigationItem key="navigationItem" title="Gizmo Pranks on Pranks" id="i4f-fX-UKW">
                         <barButtonItem key="rightBarButtonItem" systemItem="stop" id="Gb5-tA-Yjq">
                             <connections>
                                 <action selector="closeButtonPressed:" destination="P9Q-SR-fY6" id="fLq-Sr-lKf"/>
@@ -435,13 +494,24 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Gizmo's supercoding powers to change the background from dancing salmon back to George Washinton!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiH-rR-Pky">
+                                        <rect key="frame" x="92" y="40" width="600" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="600" id="faN-9U-C1Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="QiH-rR-Pky" secondAttribute="centerX" id="2VM-HY-usi"/>
                                     <constraint firstItem="GgX-Jl-CRU" firstAttribute="centerX" secondItem="YVX-30-PVv" secondAttribute="centerX" id="4ui-8H-5bC"/>
                                     <constraint firstAttribute="centerX" secondItem="1dM-qe-9CU" secondAttribute="centerX" constant="-180" id="B6X-0T-RUo"/>
                                     <constraint firstItem="YVX-30-PVv" firstAttribute="top" secondItem="GgX-Jl-CRU" secondAttribute="bottom" constant="60" id="Cbl-aA-0tT"/>
                                     <constraint firstAttribute="centerY" secondItem="0ff-HT-Cjg" secondAttribute="centerY" constant="6" id="E7Q-UN-YzB"/>
+                                    <constraint firstItem="QiH-rR-Pky" firstAttribute="top" secondItem="4tt-wv-5Ni" secondAttribute="top" constant="40" id="Jah-eK-fnA"/>
                                     <constraint firstAttribute="centerX" secondItem="GgX-Jl-CRU" secondAttribute="centerX" constant="180" id="K3o-hb-FcD"/>
                                     <constraint firstItem="1dM-qe-9CU" firstAttribute="top" secondItem="4tt-wv-5Ni" secondAttribute="top" constant="384" id="MTZ-Nl-DRL"/>
                                     <constraint firstAttribute="centerY" secondItem="xyR-6s-fDB" secondAttribute="centerY" constant="-120" id="OoL-WN-ltB"/>
@@ -1106,6 +1176,12 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Gizmo's supercoding powers to put Gizmo's arm back in place!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwx-ID-i6F">
+                                        <rect key="frame" x="97" y="50" width="588" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
@@ -1118,12 +1194,14 @@
                                     <constraint firstAttribute="height" constant="600" id="YdK-DD-iKY"/>
                                     <constraint firstItem="rDO-P9-PbB" firstAttribute="top" secondItem="6uT-6w-KKc" secondAttribute="top" constant="384" id="ZEX-Io-RKQ"/>
                                     <constraint firstAttribute="centerY" secondItem="nW1-b7-45e" secondAttribute="centerY" id="a5U-c6-Igz"/>
+                                    <constraint firstAttribute="centerX" secondItem="lwx-ID-i6F" secondAttribute="centerX" id="bba-X3-F0m"/>
                                     <constraint firstItem="mYe-Tn-eNN" firstAttribute="top" secondItem="nW1-b7-45e" secondAttribute="bottom" constant="60" id="f0F-0z-vNF"/>
                                     <constraint firstItem="rDO-P9-PbB" firstAttribute="leading" secondItem="6uT-6w-KKc" secondAttribute="leading" constant="572" id="hE4-WM-oyQ"/>
                                     <constraint firstItem="nW1-b7-45e" firstAttribute="centerX" secondItem="qqj-3u-NYE" secondAttribute="centerX" id="k2G-A2-j0M"/>
                                     <constraint firstAttribute="centerX" secondItem="X65-v4-75s" secondAttribute="centerX" id="o88-sx-0ww"/>
                                     <constraint firstAttribute="centerY" secondItem="rDO-P9-PbB" secondAttribute="centerY" id="rJD-dc-aEN"/>
                                     <constraint firstItem="nW1-b7-45e" firstAttribute="top" secondItem="qqj-3u-NYE" secondAttribute="bottom" constant="60" id="whR-yQ-0Ml"/>
+                                    <constraint firstItem="lwx-ID-i6F" firstAttribute="top" secondItem="6uT-6w-KKc" secondAttribute="top" constant="50" id="zl0-Cs-gnu"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
