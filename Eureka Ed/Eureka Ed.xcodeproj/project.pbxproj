@@ -23,6 +23,11 @@
 		4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */; };
 		4D4C93EF1A54EE3300F2FFB4 /* Honey Lemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */; };
 		4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */; };
+		4D52E0AD1AAD8FBE004E53EC /* Gizmo_2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0AA1AAD8FBE004E53EC /* Gizmo_2a.png */; };
+		4D52E0AE1AAD8FBE004E53EC /* Gizmo_2b.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0AB1AAD8FBE004E53EC /* Gizmo_2b.png */; };
+		4D52E0AF1AAD8FBE004E53EC /* Gizmo_2c.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0AC1AAD8FBE004E53EC /* Gizmo_2c.png */; };
+		4D52E0B21AAD8FC8004E53EC /* Interaction_2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0B01AAD8FC8004E53EC /* Interaction_2a.png */; };
+		4D52E0B31AAD8FC8004E53EC /* Interaction_2b.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0B11AAD8FC8004E53EC /* Interaction_2b.png */; };
 		4D5460BD1A7D482400A396EB /* RS_CS50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5460BC1A7D482400A396EB /* RS_CS50.jpg */; };
 		4D87F3531AA9966300D630FD /* EKDCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87F3521AA9966200D630FD /* EKDCollectionHeaderView.swift */; };
 		4DB6B0FC1A80254200405B86 /* Galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB6B0FB1A80254100405B86 /* Galaxy.png */; };
@@ -32,9 +37,6 @@
 		4DB702281AA0EFAD001A911C /* Gizmo_Animatic_Storyboard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DB702261AA0EFAD001A911C /* Gizmo_Animatic_Storyboard.mp4 */; };
 		4DB7022C1AA0EFE6001A911C /* Interaction_1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7022A1AA0EFE6001A911C /* Interaction_1a.png */; };
 		4DB7022D1AA0EFE6001A911C /* Interaction_1b.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7022B1AA0EFE6001A911C /* Interaction_1b.png */; };
-		4DB702311AA0F2A8001A911C /* Interaction_2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7022E1AA0F2A8001A911C /* Interaction_2a.png */; };
-		4DB702321AA0F2A8001A911C /* Interaction_2b.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7022F1AA0F2A8001A911C /* Interaction_2b.png */; };
-		4DB702331AA0F2A8001A911C /* Interaction_2c.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB702301AA0F2A8001A911C /* Interaction_2c.png */; };
 		4DB88EE31A9EFFBA00AB9164 /* Gizmo-Pranks-Interaction2-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB88EE21A9EFFBA00AB9164 /* Gizmo-Pranks-Interaction2-ViewController.swift */; };
 		4DB88EE61A9FCCAF00AB9164 /* Gizmo-Pranks-Episode-Viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB88EE51A9FCCAF00AB9164 /* Gizmo-Pranks-Episode-Viewcontroller.swift */; };
 		4DBD8E7B1A8BFB86006709A1 /* EKDVideoInteractionPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD8E7A1A8BFB86006709A1 /* EKDVideoInteractionPlayerViewController.swift */; };
@@ -91,6 +93,11 @@
 		4D4C93E91A54EE3300F2FFB4 /* Go Go.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Go Go.jpg"; sourceTree = "<group>"; };
 		4D4C93EA1A54EE3300F2FFB4 /* Honey Lemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honey Lemon.jpg"; sourceTree = "<group>"; };
 		4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wasabi.jpg; sourceTree = "<group>"; };
+		4D52E0AA1AAD8FBE004E53EC /* Gizmo_2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gizmo_2a.png; sourceTree = "<group>"; };
+		4D52E0AB1AAD8FBE004E53EC /* Gizmo_2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gizmo_2b.png; sourceTree = "<group>"; };
+		4D52E0AC1AAD8FBE004E53EC /* Gizmo_2c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gizmo_2c.png; sourceTree = "<group>"; };
+		4D52E0B01AAD8FC8004E53EC /* Interaction_2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_2a.png; sourceTree = "<group>"; };
+		4D52E0B11AAD8FC8004E53EC /* Interaction_2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_2b.png; sourceTree = "<group>"; };
 		4D5460BC1A7D482400A396EB /* RS_CS50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RS_CS50.jpg; sourceTree = "<group>"; };
 		4D87F3521AA9966200D630FD /* EKDCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDCollectionHeaderView.swift; sourceTree = "<group>"; };
 		4DB6B0FB1A80254100405B86 /* Galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Galaxy.png; sourceTree = "<group>"; };
@@ -100,9 +107,6 @@
 		4DB702261AA0EFAD001A911C /* Gizmo_Animatic_Storyboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gizmo_Animatic_Storyboard.mp4; sourceTree = "<group>"; };
 		4DB7022A1AA0EFE6001A911C /* Interaction_1a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_1a.png; sourceTree = "<group>"; };
 		4DB7022B1AA0EFE6001A911C /* Interaction_1b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_1b.png; sourceTree = "<group>"; };
-		4DB7022E1AA0F2A8001A911C /* Interaction_2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_2a.png; sourceTree = "<group>"; };
-		4DB7022F1AA0F2A8001A911C /* Interaction_2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_2b.png; sourceTree = "<group>"; };
-		4DB702301AA0F2A8001A911C /* Interaction_2c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_2c.png; sourceTree = "<group>"; };
 		4DB88EE21A9EFFBA00AB9164 /* Gizmo-Pranks-Interaction2-ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gizmo-Pranks-Interaction2-ViewController.swift"; sourceTree = "<group>"; };
 		4DB88EE51A9FCCAF00AB9164 /* Gizmo-Pranks-Episode-Viewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gizmo-Pranks-Episode-Viewcontroller.swift"; sourceTree = "<group>"; };
 		4DBD8E7A1A8BFB86006709A1 /* EKDVideoInteractionPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDVideoInteractionPlayerViewController.swift; sourceTree = "<group>"; };
@@ -191,9 +195,11 @@
 				4DB6B0FB1A80254100405B86 /* Galaxy.png */,
 				4DB7022A1AA0EFE6001A911C /* Interaction_1a.png */,
 				4DB7022B1AA0EFE6001A911C /* Interaction_1b.png */,
-				4DB7022E1AA0F2A8001A911C /* Interaction_2a.png */,
-				4DB7022F1AA0F2A8001A911C /* Interaction_2b.png */,
-				4DB702301AA0F2A8001A911C /* Interaction_2c.png */,
+				4D52E0B01AAD8FC8004E53EC /* Interaction_2a.png */,
+				4D52E0B11AAD8FC8004E53EC /* Interaction_2b.png */,
+				4D52E0AA1AAD8FBE004E53EC /* Gizmo_2a.png */,
+				4D52E0AB1AAD8FBE004E53EC /* Gizmo_2b.png */,
+				4D52E0AC1AAD8FBE004E53EC /* Gizmo_2c.png */,
 				4DB702261AA0EFAD001A911C /* Gizmo_Animatic_Storyboard.mp4 */,
 				4D5460BC1A7D482400A396EB /* RS_CS50.jpg */,
 				4D1CC5181A47827E00907A6F /* LaunchScreen.xib */,
@@ -420,25 +426,27 @@
 				4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */,
 				4DF18E1D1A495DEC0006E8B7 /* Honey Lemon.mp4 in Resources */,
 				4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */,
-				4DB702311AA0F2A8001A911C /* Interaction_2a.png in Resources */,
 				4DDE47241A7DE67800F77EB9 /* Freehand 521 BT.ttf in Resources */,
+				4D52E0B31AAD8FC8004E53EC /* Interaction_2b.png in Resources */,
 				4D4C93ED1A54EE3300F2FFB4 /* Fred.jpg in Resources */,
+				4D52E0AF1AAD8FBE004E53EC /* Gizmo_2c.png in Resources */,
 				4DB702241AA0EC02001A911C /* Gizmo_Animation_2.mp4 in Resources */,
 				4D5460BD1A7D482400A396EB /* RS_CS50.jpg in Resources */,
 				4DB702251AA0EC02001A911C /* Gizmo_Animation_3.mp4 in Resources */,
 				4DF18E1E1A495DEC0006E8B7 /* Wasabi.mp4 in Resources */,
 				4D4C93EF1A54EE3300F2FFB4 /* Honey Lemon.jpg in Resources */,
 				4DB6B0FC1A80254200405B86 /* Galaxy.png in Resources */,
+				4D52E0AD1AAD8FBE004E53EC /* Gizmo_2a.png in Resources */,
 				4DB7022C1AA0EFE6001A911C /* Interaction_1a.png in Resources */,
+				4D52E0AE1AAD8FBE004E53EC /* Gizmo_2b.png in Resources */,
+				4D52E0B21AAD8FC8004E53EC /* Interaction_2a.png in Resources */,
 				4DB702281AA0EFAD001A911C /* Gizmo_Animatic_Storyboard.mp4 in Resources */,
 				4DF18E1C1A495DEC0006E8B7 /* Go Go.mp4 in Resources */,
 				4DB702231AA0EC02001A911C /* Gizmo_Animation_1.mp4 in Resources */,
 				4DF18E1A1A495DEC0006E8B7 /* Baymax and Hiro.mp4 in Resources */,
 				4D1CC5171A47827E00907A6F /* Images.xcassets in Resources */,
 				4D4C93EC1A54EE3300F2FFB4 /* Baymax and Hiro.jpg in Resources */,
-				4DB702321AA0F2A8001A911C /* Interaction_2b.png in Resources */,
 				4DB7022D1AA0EFE6001A911C /* Interaction_1b.png in Resources */,
-				4DB702331AA0F2A8001A911C /* Interaction_2c.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

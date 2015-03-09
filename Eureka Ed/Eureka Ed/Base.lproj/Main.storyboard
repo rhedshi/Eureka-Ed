@@ -130,37 +130,15 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Visit our website at https://www.eurekaedapps.com. Email us at learnwithus@eurekaedapps.com." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IBO-dL-eaI">
-                                <rect key="frame" x="16" y="562" width="568" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0li-N5-ec1"/>
-                                    <constraint firstAttribute="width" constant="150" id="Fj7-j1-0La"/>
-                                    <constraint firstAttribute="width" id="NJG-ft-yag"/>
-                                    <constraint firstAttribute="height" id="Ywr-Qk-BHk"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Fj7-j1-0La"/>
-                                        <exclude reference="NJG-ft-yag"/>
-                                        <exclude reference="Ywr-Qk-BHk"/>
-                                    </mask>
-                                </variation>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.56470588235294117" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vkl-WB-Fmv" firstAttribute="top" secondItem="OC8-5A-tkI" secondAttribute="bottom" constant="8" id="2Js-OY-3TE"/>
                             <constraint firstItem="1Z0-ud-qBF" firstAttribute="top" secondItem="5ze-91-AaZ" secondAttribute="bottom" constant="8" id="4Md-MP-iB8"/>
                             <constraint firstItem="Mqg-c5-u8f" firstAttribute="top" secondItem="HmS-9A-sbk" secondAttribute="bottom" constant="150" id="55g-gx-TZH"/>
-                            <constraint firstItem="BJ2-bY-nxK" firstAttribute="top" secondItem="IBO-dL-eaI" secondAttribute="bottom" constant="8" id="5aR-RH-eWM"/>
                             <constraint firstItem="OC8-5A-tkI" firstAttribute="centerX" secondItem="Vkl-WB-Fmv" secondAttribute="centerX" id="6Dc-c5-71K"/>
                             <constraint firstAttribute="centerY" secondItem="5ze-91-AaZ" secondAttribute="centerY" id="8i9-fV-Mdd"/>
                             <constraint firstItem="YnC-cF-nAa" firstAttribute="centerX" secondItem="j7a-aL-gUC" secondAttribute="centerX" id="8sE-A7-H77"/>
-                            <constraint firstAttribute="centerX" secondItem="IBO-dL-eaI" secondAttribute="centerX" id="ArC-9C-3YU"/>
                             <constraint firstAttribute="centerX" secondItem="OC8-5A-tkI" secondAttribute="centerX" constant="255" id="Asx-XL-Bn4"/>
                             <constraint firstAttribute="centerX" secondItem="5ze-91-AaZ" secondAttribute="centerX" constant="-255" id="BEc-cj-0wY"/>
                             <constraint firstAttribute="centerX" secondItem="YnC-cF-nAa" secondAttribute="centerX" constant="85" id="ECG-ku-WIO"/>
@@ -171,9 +149,7 @@
                             <constraint firstItem="YnC-cF-nAa" firstAttribute="leading" secondItem="OC8-5A-tkI" secondAttribute="trailing" constant="50" id="Kvq-E3-R5U"/>
                             <constraint firstItem="A2S-fm-hbt" firstAttribute="centerX" secondItem="NcS-hF-s9E" secondAttribute="centerX" id="T4b-4O-B3o"/>
                             <constraint firstItem="RCZ-ar-iUm" firstAttribute="top" secondItem="Mqg-c5-u8f" secondAttribute="bottom" constant="8" id="Tmw-F6-pAP"/>
-                            <constraint firstItem="IBO-dL-eaI" firstAttribute="leading" secondItem="Qxz-om-bfy" secondAttribute="leadingMargin" id="Ul2-TO-fwW"/>
                             <constraint firstAttribute="centerX" secondItem="Mqg-c5-u8f" secondAttribute="centerX" id="Zg6-Hp-pdF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IBO-dL-eaI" secondAttribute="trailing" id="exL-QZ-Cr6"/>
                             <constraint firstAttribute="centerY" secondItem="NcS-hF-s9E" secondAttribute="centerY" id="hDD-Cw-iSk"/>
                             <constraint firstAttribute="centerX" secondItem="j7a-aL-gUC" secondAttribute="centerX" id="nnZ-Kb-xZS"/>
                             <constraint firstAttribute="centerY" secondItem="OC8-5A-tkI" secondAttribute="centerY" id="sDj-Cs-SQb"/>
@@ -241,7 +217,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EKDCollectionHeaderView" id="KXk-HG-aJm" customClass="EKDCollectionHeaderView" customModule="Eureka_Ed" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKD-2z-Bzo">
@@ -1551,7 +1527,7 @@
     </scenes>
     <resources>
         <image name="Interaction_1a.png" width="868" height="499"/>
-        <image name="Interaction_2a.png" width="354" height="428"/>
+        <image name="Interaction_2a.png" width="868" height="499"/>
         <image name="camera_logo" width="1500" height="1000"/>
         <image name="clyde" width="1304" height="1304"/>
         <image name="iggy" width="1304" height="1304"/>
