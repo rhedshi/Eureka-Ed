@@ -28,6 +28,13 @@
 		4D52E0AF1AAD8FBE004E53EC /* Gizmo_2c.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0AC1AAD8FBE004E53EC /* Gizmo_2c.png */; };
 		4D52E0B21AAD8FC8004E53EC /* Interaction_2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0B01AAD8FC8004E53EC /* Interaction_2a.png */; };
 		4D52E0B31AAD8FC8004E53EC /* Interaction_2b.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0B11AAD8FC8004E53EC /* Interaction_2b.png */; };
+		4D52E0BD1AAD953A004E53EC /* Clyde-DONE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0B61AAD953A004E53EC /* Clyde-DONE.mp4 */; };
+		4D52E0BE1AAD953A004E53EC /* Gizmo-DONE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0B71AAD953A004E53EC /* Gizmo-DONE.mp4 */; };
+		4D52E0BF1AAD953A004E53EC /* Iggy-DONE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0B81AAD953A004E53EC /* Iggy-DONE.mp4 */; };
+		4D52E0C01AAD953A004E53EC /* Jane-DONE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0B91AAD953A004E53EC /* Jane-DONE.mp4 */; };
+		4D52E0C11AAD953A004E53EC /* Martin-DONE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0BA1AAD953A004E53EC /* Martin-DONE.mp4 */; };
+		4D52E0C21AAD953A004E53EC /* Merlin-DONE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0BB1AAD953A004E53EC /* Merlin-DONE.mp4 */; };
+		4D52E0C31AAD953A004E53EC /* Principal-DONE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D52E0BC1AAD953A004E53EC /* Principal-DONE.mp4 */; };
 		4D5460BD1A7D482400A396EB /* RS_CS50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5460BC1A7D482400A396EB /* RS_CS50.jpg */; };
 		4D87F3531AA9966300D630FD /* EKDCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D87F3521AA9966200D630FD /* EKDCollectionHeaderView.swift */; };
 		4DB6B0FC1A80254200405B86 /* Galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB6B0FB1A80254100405B86 /* Galaxy.png */; };
@@ -54,6 +61,7 @@
 		4DE8E8721A75E1A700F28F18 /* TWTSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8711A75E1A700F28F18 /* TWTSideMenuViewController.m */; };
 		4DE8E8741A75E64000F28F18 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE8E8731A75E64000F28F18 /* Menu.storyboard */; };
 		4DE8E8761A76007900F28F18 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8E8751A76007900F28F18 /* MenuViewController.swift */; };
+		4DECAD731AAF7FF00079E9CA /* Preview.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DECAD721AAF7FF00079E9CA /* Preview.mp4 */; };
 		4DF18E091A48F4700006E8B7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF18E081A48F4700006E8B7 /* Video.swift */; };
 		4DF18E1A1A495DEC0006E8B7 /* Baymax and Hiro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */; };
 		4DF18E1B1A495DEC0006E8B7 /* Fred.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18E161A495DEC0006E8B7 /* Fred.mp4 */; };
@@ -98,6 +106,13 @@
 		4D52E0AC1AAD8FBE004E53EC /* Gizmo_2c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gizmo_2c.png; sourceTree = "<group>"; };
 		4D52E0B01AAD8FC8004E53EC /* Interaction_2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_2a.png; sourceTree = "<group>"; };
 		4D52E0B11AAD8FC8004E53EC /* Interaction_2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interaction_2b.png; sourceTree = "<group>"; };
+		4D52E0B61AAD953A004E53EC /* Clyde-DONE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Clyde-DONE.mp4"; sourceTree = "<group>"; };
+		4D52E0B71AAD953A004E53EC /* Gizmo-DONE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gizmo-DONE.mp4"; sourceTree = "<group>"; };
+		4D52E0B81AAD953A004E53EC /* Iggy-DONE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Iggy-DONE.mp4"; sourceTree = "<group>"; };
+		4D52E0B91AAD953A004E53EC /* Jane-DONE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jane-DONE.mp4"; sourceTree = "<group>"; };
+		4D52E0BA1AAD953A004E53EC /* Martin-DONE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Martin-DONE.mp4"; sourceTree = "<group>"; };
+		4D52E0BB1AAD953A004E53EC /* Merlin-DONE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merlin-DONE.mp4"; sourceTree = "<group>"; };
+		4D52E0BC1AAD953A004E53EC /* Principal-DONE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Principal-DONE.mp4"; sourceTree = "<group>"; };
 		4D5460BC1A7D482400A396EB /* RS_CS50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RS_CS50.jpg; sourceTree = "<group>"; };
 		4D87F3521AA9966200D630FD /* EKDCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDCollectionHeaderView.swift; sourceTree = "<group>"; };
 		4DB6B0FB1A80254100405B86 /* Galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Galaxy.png; sourceTree = "<group>"; };
@@ -126,6 +141,7 @@
 		4DE8E8711A75E1A700F28F18 /* TWTSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTSideMenuViewController.m; sourceTree = "<group>"; };
 		4DE8E8731A75E64000F28F18 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		4DE8E8751A76007900F28F18 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4DECAD721AAF7FF00079E9CA /* Preview.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Preview.mp4; sourceTree = "<group>"; };
 		4DF18E081A48F4700006E8B7 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		4DF18E151A495DEC0006E8B7 /* Baymax and Hiro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baymax and Hiro.mp4"; sourceTree = "<group>"; };
 		4DF18E161A495DEC0006E8B7 /* Fred.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fred.mp4; sourceTree = "<group>"; };
@@ -200,6 +216,7 @@
 				4D52E0AA1AAD8FBE004E53EC /* Gizmo_2a.png */,
 				4D52E0AB1AAD8FBE004E53EC /* Gizmo_2b.png */,
 				4D52E0AC1AAD8FBE004E53EC /* Gizmo_2c.png */,
+				4DECAD721AAF7FF00079E9CA /* Preview.mp4 */,
 				4DB702261AA0EFAD001A911C /* Gizmo_Animatic_Storyboard.mp4 */,
 				4D5460BC1A7D482400A396EB /* RS_CS50.jpg */,
 				4D1CC5181A47827E00907A6F /* LaunchScreen.xib */,
@@ -253,6 +270,20 @@
 				4D4C93EB1A54EE3300F2FFB4 /* Wasabi.jpg */,
 			);
 			path = "Big Hero 6";
+			sourceTree = "<group>";
+		};
+		4D52E0B51AAD94FD004E53EC /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				4D52E0B61AAD953A004E53EC /* Clyde-DONE.mp4 */,
+				4D52E0B71AAD953A004E53EC /* Gizmo-DONE.mp4 */,
+				4D52E0B81AAD953A004E53EC /* Iggy-DONE.mp4 */,
+				4D52E0B91AAD953A004E53EC /* Jane-DONE.mp4 */,
+				4D52E0BA1AAD953A004E53EC /* Martin-DONE.mp4 */,
+				4D52E0BB1AAD953A004E53EC /* Merlin-DONE.mp4 */,
+				4D52E0BC1AAD953A004E53EC /* Principal-DONE.mp4 */,
+			);
+			path = Characters;
 			sourceTree = "<group>";
 		};
 		4DB7021F1AA0EA4A001A911C /* Gizmo */ = {
@@ -319,6 +350,7 @@
 		4DF18E121A4959680006E8B7 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				4D52E0B51AAD94FD004E53EC /* Characters */,
 				4DB7021F1AA0EA4A001A911C /* Gizmo */,
 				4DF18E131A49597D0006E8B7 /* Big Hero 6 */,
 			);
@@ -424,10 +456,13 @@
 				4DF18E1B1A495DEC0006E8B7 /* Fred.mp4 in Resources */,
 				4D1CC51A1A47827E00907A6F /* LaunchScreen.xib in Resources */,
 				4D4C93EE1A54EE3300F2FFB4 /* Go Go.jpg in Resources */,
+				4D52E0C31AAD953A004E53EC /* Principal-DONE.mp4 in Resources */,
 				4DF18E1D1A495DEC0006E8B7 /* Honey Lemon.mp4 in Resources */,
 				4D4C93F01A54EE3300F2FFB4 /* Wasabi.jpg in Resources */,
+				4D52E0BF1AAD953A004E53EC /* Iggy-DONE.mp4 in Resources */,
 				4DDE47241A7DE67800F77EB9 /* Freehand 521 BT.ttf in Resources */,
 				4D52E0B31AAD8FC8004E53EC /* Interaction_2b.png in Resources */,
+				4D52E0C21AAD953A004E53EC /* Merlin-DONE.mp4 in Resources */,
 				4D4C93ED1A54EE3300F2FFB4 /* Fred.jpg in Resources */,
 				4D52E0AF1AAD8FBE004E53EC /* Gizmo_2c.png in Resources */,
 				4DB702241AA0EC02001A911C /* Gizmo_Animation_2.mp4 in Resources */,
@@ -441,11 +476,16 @@
 				4D52E0AE1AAD8FBE004E53EC /* Gizmo_2b.png in Resources */,
 				4D52E0B21AAD8FC8004E53EC /* Interaction_2a.png in Resources */,
 				4DB702281AA0EFAD001A911C /* Gizmo_Animatic_Storyboard.mp4 in Resources */,
+				4D52E0BE1AAD953A004E53EC /* Gizmo-DONE.mp4 in Resources */,
 				4DF18E1C1A495DEC0006E8B7 /* Go Go.mp4 in Resources */,
 				4DB702231AA0EC02001A911C /* Gizmo_Animation_1.mp4 in Resources */,
 				4DF18E1A1A495DEC0006E8B7 /* Baymax and Hiro.mp4 in Resources */,
 				4D1CC5171A47827E00907A6F /* Images.xcassets in Resources */,
 				4D4C93EC1A54EE3300F2FFB4 /* Baymax and Hiro.jpg in Resources */,
+				4D52E0C01AAD953A004E53EC /* Jane-DONE.mp4 in Resources */,
+				4DECAD731AAF7FF00079E9CA /* Preview.mp4 in Resources */,
+				4D52E0BD1AAD953A004E53EC /* Clyde-DONE.mp4 in Resources */,
+				4D52E0C11AAD953A004E53EC /* Martin-DONE.mp4 in Resources */,
 				4DB7022D1AA0EFE6001A911C /* Interaction_1b.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

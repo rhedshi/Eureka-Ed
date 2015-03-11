@@ -69,7 +69,6 @@ class Gizmo_Pranks_Episode_Viewcontroller: EKDVideoInteractionPlayerViewControll
         
         switch reason {
         case .PlaybackEnded:
-            // container.hidden = false
             if !interactions.isEmpty {
                 container.addViewController(interactions.first!)
                 interactions.first!.delegate = self
@@ -79,7 +78,7 @@ class Gizmo_Pranks_Episode_Viewcontroller: EKDVideoInteractionPlayerViewControll
                 container.addViewController(cameraViewController)
             }
         case .UserExited:
-            // container.hidden = true
+            container.addViewController(cameraViewController)
             continueButton.hidden = false
         default:
             break

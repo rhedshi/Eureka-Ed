@@ -13,7 +13,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let series = Series.BigHero6()
+    let series = [Series.Episodes(), Series.Characters()]
     var embeddingViewController: UIViewController?
     
     override func viewDidLoad() {
@@ -35,12 +35,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return series.videos!.count
+        return (series[section] as Series).videos!.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell: EKDVideoThumbnailCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("EKDVideoThumbnailCollectionViewCell", forIndexPath: indexPath) as EKDVideoThumbnailCollectionViewCell
-        cell.video = series.videos![indexPath.row] as Video
+        cell.video = (series[indexPath.section] as Series).videos![indexPath.row] as Video
         cell.imageView.image = cell.video!.image
         cell.imageView.contentMode = UIViewContentMode.ScaleAspectFit
         return cell
@@ -62,30 +62,37 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // MARK: - UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let videoInteractionPlayerViewController: Gizmo_Pranks_Episode_Viewcontroller = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("EKDVideoInteractionPlayerViewController") as Gizmo_Pranks_Episode_Viewcontroller
-        let navigationController: UINavigationController = UINavigationController(rootViewController: videoInteractionPlayerViewController)
-        self.embeddingViewController?.presentViewController(navigationController, animated: true, completion: { () -> Void in
-            videoInteractionPlayerViewController.nextButtonPressed("")
-        })
         
+        if indexPath == NSIndexPath(forRow: 0, inSection: 0) {
+            let videoInteractionPlayerViewController: Gizmo_Pranks_Episode_Viewcontroller = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("EKDVideoInteractionPlayerViewController") as Gizmo_Pranks_Episode_Viewcontroller
+            let navigationController: UINavigationController = UINavigationController(rootViewController: videoInteractionPlayerViewController)
+            self.embeddingViewController?.presentViewController(navigationController, animated: true, completion: { () -> Void in
+                videoInteractionPlayerViewController.nextButtonPressed("")
+            })
+        }
+        else {
+            let cell = collectionView.cellForItemAtIndexPath(indexPath) as EKDVideoThumbnailCollectionViewCell
+            let moviePlayer: MPMoviePlayerViewController = MPMoviePlayerViewController(contentURL: cell.video!.url)
+            self.embeddingViewController?.presentMoviePlayerViewControllerAnimated(moviePlayer)
+        }
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: 151.0, height: 85.0)
+        return CGSize(width: 180, height: 130)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 20.0
+        return 20
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 50.0
+        return 50
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
+        return UIEdgeInsets(top: 20, left: 30, bottom: 20, right: 30)
     }
 }
 

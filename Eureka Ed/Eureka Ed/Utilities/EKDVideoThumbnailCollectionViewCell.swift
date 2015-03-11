@@ -10,21 +10,23 @@ import UIKit
 
 class EKDVideoThumbnailCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+            imageView.layer.borderColor = UIColor.lightGrayColor().CGColor
+            imageView.layer.borderWidth = 1
+            imageView.clipsToBounds = false
+        }
+    }
+    @IBOutlet weak var title: UILabel!
     
-    var video: Video?
+    var video: Video? {
+        didSet {
+            title.text = video!.name
+        }
+    }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        self.layer.borderColor = UIColor.lightGrayColor().CGColor
-        self.layer.borderWidth = 1
-        
-        self.layer.shadowColor = UIColor.darkGrayColor().CGColor
-        self.layer.shadowRadius = 2
-        self.layer.shadowOpacity = 0.5
-        self.layer.shadowOffset = CGSizeMake(0, 2)
-        
-        self.clipsToBounds = false
     }
 }
