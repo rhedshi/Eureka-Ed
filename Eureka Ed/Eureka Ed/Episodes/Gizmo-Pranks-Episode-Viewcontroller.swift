@@ -54,12 +54,15 @@ class Gizmo_Pranks_Episode_Viewcontroller: EKDVideoInteractionPlayerViewControll
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
             
         })
+        Flurry.logEvent("Exit: \(videos.count) Videos Left, \(interactions.count) Interactions Left")
     }
     
     @IBAction func continueButtonPressed(sender: AnyObject) {
         self.presentMoviePlayerViewControllerAnimated(player)
         player!.moviePlayer.play()
         continueButton.hidden = true
+        
+        Flurry.logEvent("Continue: \(videos.count) Videos Left, \(interactions.count) Interactions Left")
     }
     
     func didFinishPlayback(notification: NSNotification) {
@@ -69,15 +72,26 @@ class Gizmo_Pranks_Episode_Viewcontroller: EKDVideoInteractionPlayerViewControll
         
         switch reason {
         case .PlaybackEnded:
+            Flurry.logEvent("Playback Ended")
             if !interactions.isEmpty {
+                switch interactions.count {
+                case 1:
+                    Flurry.logEvent("Completed 2nd Video")
+                case 2:
+                    Flurry.logEvent("Completed 1st Video")
+                default:
+                    break
+                }
                 container.addViewController(interactions.first!)
                 interactions.first!.delegate = self
                 interactions.removeAtIndex(0)
             }
             if videos.isEmpty {
+                Flurry.logEvent("Completed 3rd Video")
                 container.addViewController(cameraViewController)
             }
         case .UserExited:
+            Flurry.logEvent("User Exited")
             container.addViewController(cameraViewController)
             continueButton.hidden = false
         default:

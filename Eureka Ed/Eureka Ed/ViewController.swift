@@ -43,6 +43,28 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.video = (series[indexPath.section] as Series).videos![indexPath.row] as Video
         cell.imageView.image = cell.video!.image
         cell.imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        
+        if cell.video?.name == "Preview" {
+            // create blue overlay button "Watch More"
+            cell.overlayButton.hidden = false
+            cell.overlayButton.backgroundColor = UIColor.EKDBlueColor().colorWithAlphaComponent(0.75)
+            cell.overlayButton.layer.shadowColor = UIColor.EKDBlueColor().CGColor
+            cell.overlayButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+            cell.overlayButton.layer.shadowOpacity = 1
+            cell.overlayButton.layer.shadowRadius = 6
+            cell.overlayButton.clipsToBounds = false
+            cell.clipsToBounds = false
+        }
+        
+        switch indexPath.section {
+        case 0:
+            Flurry.logEvent(cell.video?.name)
+        case 1:
+            Flurry.logEvent("Character Bio: \(cell.video?.name)")
+        default:
+            break
+        }
+        
         return cell
     }
     
@@ -55,7 +77,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             
             reusableView = headerView
         }
-        
         return reusableView
     }
     

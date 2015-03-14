@@ -51,6 +51,14 @@
 		4DCEF4EA1A74209500AFAA71 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF4E81A74209500AFAA71 /* Episode.swift */; };
 		4DCEF4EB1A74209500AFAA71 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF4E91A74209500AFAA71 /* Series.swift */; };
 		4DCFDE131A7F01FF00BE4245 /* EKDProfileCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFDE121A7F01FF00BE4245 /* EKDProfileCircleButton.swift */; };
+		4DDC2E8E1AB3B41F0098C010 /* libFlurry_6.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC2E8D1AB3B41F0098C010 /* libFlurry_6.2.0.a */; };
+		4DDC2E9E1AB3C1C60098C010 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC2E8F1AB3BBCA0098C010 /* SystemConfiguration.framework */; };
+		4DDC2E9F1AB3C1CA0098C010 /* Appsee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC2E911AB3C10C0098C010 /* Appsee.framework */; };
+		4DDC2EA01AB3C1CD0098C010 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC2E931AB3C12E0098C010 /* AVFoundation.framework */; };
+		4DDC2EA11AB3C1CF0098C010 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC2E951AB3C1350098C010 /* CoreGraphics.framework */; };
+		4DDC2EA21AB3C1D20098C010 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC2E971AB3C13F0098C010 /* CoreMedia.framework */; };
+		4DDC2EA31AB3C1D40098C010 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC2E991AB3C14B0098C010 /* CoreVideo.framework */; };
+		4DDC2EA41AB3C1D90098C010 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC2E9B1AB3C1560098C010 /* QuartzCore.framework */; };
 		4DDE47241A7DE67800F77EB9 /* Freehand 521 BT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DDE47231A7DE67800F77EB9 /* Freehand 521 BT.ttf */; };
 		4DE867261A916D710040FE6E /* EKDInteractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE867251A916D710040FE6E /* EKDInteractionViewController.swift */; };
 		4DE867281A919EFD0040FE6E /* EKDInteractionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE867271A919EFD0040FE6E /* EKDInteractionBlock.swift */; };
@@ -129,6 +137,15 @@
 		4DCEF4E81A74209500AFAA71 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		4DCEF4E91A74209500AFAA71 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
 		4DCFDE121A7F01FF00BE4245 /* EKDProfileCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDProfileCircleButton.swift; sourceTree = "<group>"; };
+		4DDC2E8C1AB3B41F0098C010 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		4DDC2E8D1AB3B41F0098C010 /* libFlurry_6.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.2.0.a; sourceTree = "<group>"; };
+		4DDC2E8F1AB3BBCA0098C010 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DDC2E911AB3C10C0098C010 /* Appsee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Appsee.framework; sourceTree = "<group>"; };
+		4DDC2E931AB3C12E0098C010 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4DDC2E951AB3C1350098C010 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4DDC2E971AB3C13F0098C010 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4DDC2E991AB3C14B0098C010 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4DDC2E9B1AB3C1560098C010 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4DDE47231A7DE67800F77EB9 /* Freehand 521 BT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freehand 521 BT.ttf"; sourceTree = "<group>"; };
 		4DE867251A916D710040FE6E /* EKDInteractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDInteractionViewController.swift; sourceTree = "<group>"; };
 		4DE867271A919EFD0040FE6E /* EKDInteractionBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKDInteractionBlock.swift; sourceTree = "<group>"; };
@@ -155,6 +172,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDC2E8E1AB3B41F0098C010 /* libFlurry_6.2.0.a in Frameworks */,
+				4DDC2E9F1AB3C1CA0098C010 /* Appsee.framework in Frameworks */,
+				4DDC2EA01AB3C1CD0098C010 /* AVFoundation.framework in Frameworks */,
+				4DDC2EA11AB3C1CF0098C010 /* CoreGraphics.framework in Frameworks */,
+				4DDC2EA21AB3C1D20098C010 /* CoreMedia.framework in Frameworks */,
+				4DDC2EA31AB3C1D40098C010 /* CoreVideo.framework in Frameworks */,
+				4DDC2EA41AB3C1D90098C010 /* QuartzCore.framework in Frameworks */,
+				4DDC2E9E1AB3C1C60098C010 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +196,7 @@
 		4D1CC4FE1A47827E00907A6F = {
 			isa = PBXGroup;
 			children = (
+				4DDC2E9D1AB3C16B0098C010 /* Frameworks */,
 				4D1CC5091A47827E00907A6F /* Eureka Ed */,
 				4D1CC5221A47827E00907A6F /* Eureka EdTests */,
 				4D1CC5081A47827E00907A6F /* Products */,
@@ -313,6 +339,20 @@
 			path = Interactions;
 			sourceTree = "<group>";
 		};
+		4DDC2E9D1AB3C16B0098C010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DDC2E8F1AB3BBCA0098C010 /* SystemConfiguration.framework */,
+				4DDC2E911AB3C10C0098C010 /* Appsee.framework */,
+				4DDC2E931AB3C12E0098C010 /* AVFoundation.framework */,
+				4DDC2E951AB3C1350098C010 /* CoreGraphics.framework */,
+				4DDC2E971AB3C13F0098C010 /* CoreMedia.framework */,
+				4DDC2E991AB3C14B0098C010 /* CoreVideo.framework */,
+				4DDC2E9B1AB3C1560098C010 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4DE867291A919F6B0040FE6E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +381,8 @@
 		4DE8E86E1A75E09A00F28F18 /* Downloads */ = {
 			isa = PBXGroup;
 			children = (
+				4DDC2E8C1AB3B41F0098C010 /* Flurry.h */,
+				4DDC2E8D1AB3B41F0098C010 /* libFlurry_6.2.0.a */,
 				4DE8E8701A75E1A700F28F18 /* TWTSideMenuViewController.h */,
 				4DE8E8711A75E1A700F28F18 /* TWTSideMenuViewController.m */,
 			);
@@ -419,7 +461,7 @@
 				TargetAttributes = {
 					4D1CC5061A47827E00907A6F = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 3HZ8GXD28Q;
+						DevelopmentTeam = 9C4T945F74;
 					};
 					4D1CC51E1A47827E00907A6F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -655,8 +697,17 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Eureka Ed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Eureka",
+					Ed/Downloads,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eureka Ed/Eureka Ed-Bridging-Header.h";
@@ -671,8 +722,17 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Eureka Ed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Eureka",
+					Ed/Downloads,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eureka Ed/Eureka Ed-Bridging-Header.h";

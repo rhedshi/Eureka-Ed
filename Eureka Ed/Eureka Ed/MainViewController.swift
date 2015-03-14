@@ -45,6 +45,8 @@ class MainViewController: UIViewController {
             self.title = "Achievements"
         case 4:
             self.title = "Friends"
+        case 5:
+            self.title = "Share"
         default:
             break
         }
@@ -54,15 +56,22 @@ class MainViewController: UIViewController {
             viewController.embeddingViewController = self
             container.addViewController(viewController)
         }
+        else if index == 5 {
+            
+        }
         else {
             let viewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("ComingSoonViewController") as UIViewController
             container.addViewController(viewController)
         }
+        
+        Flurry.logEvent(self.title)
     }
     
     @IBAction func openButtonPressed(sender: AnyObject) {
         self.sideMenuViewController.openMenuAnimated(true, completion: nil)
         // self.showAlert()
+        
+        Flurry.logEvent("Parent Portal")
     }
     
     func enter(#passcode: String) {
@@ -98,6 +107,8 @@ class MainViewController: UIViewController {
     @IBAction func switchUserPressed(sender: AnyObject) {
         let initialViewController: InitialViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("InitialViewController") as InitialViewController
         self.sideMenuViewController.setMainViewController(initialViewController, animated: false, closeMenu: false)
+        
+        Flurry.logEvent("Switch User")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

@@ -20,6 +20,8 @@ class InitialViewController: UIViewController {
         mainViewController.profileCircleButton = EKDProfileCircleButton(name: "", image: profile.image!, style: .BarButtonItem)
         let navigationController: UINavigationController = UINavigationController(rootViewController: mainViewController)
         self.sideMenuViewController.setMainViewController(navigationController, animated: true, closeMenu: false)
+        
+        Flurry.logEvent("Profile: \(profile.titleLabel?.text)")
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

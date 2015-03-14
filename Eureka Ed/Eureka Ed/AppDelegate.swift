@@ -36,6 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = self.sideMenuViewController;
         
+        // Start session for analytics
+        Appsee.start("595623d97aef4e1592d7103f6834fa72")
+        Flurry.startSession("TXQBPJTVZHZ5BPPZMHM3")
+        
+        
         return true
     }
 

@@ -77,11 +77,15 @@ class Gizmo_Pranks_Interaction1_ViewController: EKDInteractionViewController {
                 if finished == 4 {
                     imageView.image = UIImage(named: "Interaction_1b")
                     delegate?.didCompleteInteraction()
+                    
+                    Flurry.logEvent("Completed 1st Interaction")
                 }
             }
             else {
                 block.setTranslatesAutoresizingMaskIntoConstraints(false)
                 block.layoutIfNeeded()
+                
+                Flurry.logEvent("Wrong Target: \(block.titleLabel?.text)")
             }
         }
     }

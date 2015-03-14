@@ -19,6 +19,7 @@ class EKDVideoThumbnailCollectionViewCell: UICollectionViewCell {
         }
     }
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var overlayButton: UIButton!
     
     var video: Video? {
         didSet {

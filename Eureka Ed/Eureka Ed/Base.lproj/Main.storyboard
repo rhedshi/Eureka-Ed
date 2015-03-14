@@ -43,7 +43,7 @@
                                     <constraint firstAttribute="width" constant="120" id="uQT-v7-4sS"/>
                                 </constraints>
                                 <color key="tintColor" red="0.13725490200000001" green="0.56470588239999997" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="clyde">
+                                <state key="normal" title="Clyde" image="clyde">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -63,7 +63,7 @@
                                     <constraint firstAttribute="width" constant="120" id="JAN-Kj-rLH"/>
                                 </constraints>
                                 <color key="tintColor" red="0.13725490200000001" green="0.56470588239999997" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="merlin">
+                                <state key="normal" title="Merlin" image="merlin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -82,7 +82,7 @@
                                     <constraint firstAttribute="height" constant="120" id="bdw-RV-8IT"/>
                                     <constraint firstAttribute="width" constant="120" id="lc1-Fb-8m3"/>
                                 </constraints>
-                                <state key="normal" image="iggy">
+                                <state key="normal" title="Iggy" image="iggy">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -109,7 +109,7 @@
                                     <constraint firstAttribute="height" constant="120" id="EXI-wE-MhP"/>
                                     <constraint firstAttribute="width" constant="120" id="Vhc-lI-hqS"/>
                                 </constraints>
-                                <state key="normal" image="jane">
+                                <state key="normal" title="Jane" image="jane">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -211,6 +211,15 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cn-Xa-PHM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="100"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Watch More!">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -237,6 +246,7 @@
                                         </variation>
                                         <connections>
                                             <outlet property="imageView" destination="2fB-pP-38q" id="8iQ-sr-a68"/>
+                                            <outlet property="overlayButton" destination="7cn-Xa-PHM" id="8tY-Do-VRD"/>
                                             <outlet property="title" destination="z7b-i2-Wc6" id="8wF-h5-JHv"/>
                                         </connections>
                                     </collectionViewCell>
@@ -990,22 +1000,40 @@
                                             <action selector="sideButtonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="Irr-mC-tbt"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRL-tg-lww" customClass="EKDButton" customModule="Eureka_Ed" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="480" width="120" height="120"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.76470588240000004" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="JRL-tg-lww" secondAttribute="height" multiplier="1:1" id="OcB-bZ-KsX"/>
+                                        </constraints>
+                                        <state key="normal" image="noun_43554">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sideButtonPressed:" destination="GK6-My-Zhq" eventType="touchUpInside" id="j64-No-3RF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="or7-bp-RWT" firstAttribute="top" secondItem="huU-e9-1uF" secondAttribute="top" id="2Hj-ND-kDg"/>
                                     <constraint firstAttribute="trailing" secondItem="qQc-8C-b6h" secondAttribute="trailing" id="5ND-lH-BiK"/>
                                     <constraint firstItem="aN4-DR-B1M" firstAttribute="top" secondItem="qQc-8C-b6h" secondAttribute="bottom" id="Bsq-ND-JZg"/>
+                                    <constraint firstItem="JRL-tg-lww" firstAttribute="leading" secondItem="huU-e9-1uF" secondAttribute="leading" id="CXr-fo-RKm"/>
                                     <constraint firstItem="qQc-8C-b6h" firstAttribute="top" secondItem="Vz8-Z8-69L" secondAttribute="bottom" id="F7b-Yx-cqA"/>
                                     <constraint firstItem="or7-bp-RWT" firstAttribute="leading" secondItem="huU-e9-1uF" secondAttribute="leading" id="GyH-ZG-cB7"/>
                                     <constraint firstItem="aN4-DR-B1M" firstAttribute="leading" secondItem="huU-e9-1uF" secondAttribute="leading" id="Lme-wP-PlQ"/>
                                     <constraint firstAttribute="width" constant="120" id="Yzh-QB-wF8"/>
+                                    <constraint firstAttribute="trailing" secondItem="JRL-tg-lww" secondAttribute="trailing" id="ZD1-eI-8O5"/>
                                     <constraint firstItem="qQc-8C-b6h" firstAttribute="leading" secondItem="huU-e9-1uF" secondAttribute="leading" id="ZSQ-sN-rZj"/>
                                     <constraint firstAttribute="trailing" secondItem="Vz8-Z8-69L" secondAttribute="trailing" id="e4b-8U-bBH"/>
                                     <constraint firstAttribute="trailing" secondItem="or7-bp-RWT" secondAttribute="trailing" id="gl3-aQ-XaX"/>
+                                    <constraint firstItem="JRL-tg-lww" firstAttribute="top" secondItem="aN4-DR-B1M" secondAttribute="bottom" id="kh5-oR-aS0"/>
                                     <constraint firstAttribute="trailing" secondItem="aN4-DR-B1M" secondAttribute="trailing" id="ktM-rl-64c"/>
                                     <constraint firstItem="Vz8-Z8-69L" firstAttribute="top" secondItem="or7-bp-RWT" secondAttribute="bottom" id="oA0-EL-6Ro"/>
                                     <constraint firstItem="Vz8-Z8-69L" firstAttribute="leading" secondItem="huU-e9-1uF" secondAttribute="leading" id="r5U-EW-bex"/>
+                                    <constraint firstItem="JRL-tg-lww" firstAttribute="width" secondItem="JRL-tg-lww" secondAttribute="height" multiplier="1:1" id="xqm-Ug-FeU"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-Yl-rGG" customClass="EKDContainerView" customModule="Eureka_Ed" customModuleProvider="target">
@@ -1131,6 +1159,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvp-Zy-ViK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3372" y="-764"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1ep-ed-K6J">
+            <objects>
+                <viewController id="RJI-uw-k3B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mye-mO-TKD"/>
+                        <viewControllerLayoutGuide type="bottom" id="oUu-Lz-Q0Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nKL-ht-Jlo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z33-uD-wML" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4099" y="-764"/>
         </scene>
         <!--Gizmo Pranks Interaction 1 View Controller-->
         <scene sceneID="iJ5-Zj-IXw">
@@ -1587,6 +1633,7 @@
         <image name="merlin" width="1304" height="1308"/>
         <image name="noun_10681" width="80" height="80"/>
         <image name="noun_36120" width="80" height="80"/>
+        <image name="noun_43554" width="80" height="80"/>
         <image name="noun_75298" width="600" height="600"/>
         <image name="noun_78729" width="80" height="80"/>
         <image name="noun_8180" width="80" height="80"/>
