@@ -60,7 +60,7 @@ class MainViewController: UIViewController {
             
         }
         else {
-            let viewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("ComingSoonViewController") as UIViewController
+            let viewController: UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("CameraViewController") as UIViewController
             container.addViewController(viewController)
         }
         

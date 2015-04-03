@@ -704,7 +704,10 @@
 				INFOPLIST_FILE = "Eureka Ed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(PROJECT_DIR)/Eureka",
+					Ed/Downloads,
+					"$(PROJECT_DIR)/Eureka",
+					Ed/Downloads,
 					"$(PROJECT_DIR)/Eureka",
 					Ed/Downloads,
 				);
@@ -728,7 +731,10 @@
 				INFOPLIST_FILE = "Eureka Ed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(PROJECT_DIR)/Eureka",
+					Ed/Downloads,
+					"$(PROJECT_DIR)/Eureka",
+					Ed/Downloads,
 					"$(PROJECT_DIR)/Eureka",
 					Ed/Downloads,
 				);
